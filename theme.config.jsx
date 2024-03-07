@@ -3,5 +3,6 @@ export default {
   project: {
     link: 'https://github.com/UsageHQ/ai-ux',
   },
+  docsRepositoryBase: 'https://github.com/UsageHQ/ai-ux/tree/main/pages'
   // ... other theme options
 };
