@@ -1,0 +1,26 @@
+{
+  "-- overview": {
+    "type": "separator",
+    "title": "Overview"
+  },
+  "introduction": "Introduction",
+  "overview-of-ai-design": "Overview of AI Design",
+  "design-principle": "Design Principles",
+  "-- design-your-ai-product": {
+    "type": "separator",
+    "title": "Design Your AI Product"
+  },
+  "context-building": "Context Building",
+  "intermediary-processing": "Intermediary Processing",
+  "presentation-of-results": "Presentation of Results",
+  "refining-results": "Refining Results",
+  "monetization": "Monetization",
+  "app-integration": "App Integration",
+  "development-guidelines": "Development Guidelines",
+  "tools-and-resources": "Tools and Resources",
+  "case-studies": "Case Studies",
+  "-- more": {
+    "type": "separator",
+    "title": "More"
+  }
+}
