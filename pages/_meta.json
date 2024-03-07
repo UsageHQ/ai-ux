@@ -22,5 +22,9 @@
   "-- more": {
     "type": "separator",
     "title": "More"
-  }
+  },
+  "about-usageso": "About Usage.so",
+  "how-to-contribute": "How to contribute?",
+  "thank-you-our-contributors": "Thank you our contributors",
+  "how-to-reach-us": "How to reach us?"
 }
