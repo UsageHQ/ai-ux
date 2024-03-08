@@ -1,0 +1,9 @@
+export { default as ChatBubbles } from './chat-bubbles.svg';
+export { default as Menu } from './menu.svg';
+export { default as PencilEdit } from './pencil-edit.svg';
+export { default as Sparkles } from './sparkles.svg';
+export { default as SquaresPlus } from './squares-plus.svg';
+export { default as Film } from './film.svg';
+export { default as Swatch } from './swatch.svg';
+export { default as CpuChip } from './cpu-chip.svg';
+export { default as LightBulb } from './light-bulb.svg';
