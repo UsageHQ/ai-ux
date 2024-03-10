@@ -2,6 +2,6 @@
   "indeterminate-progress": "Indeterminate Progress",
   "determinate-progress": "Determinate Progress",
   "interactive-indicators": "Interactive Indicators",
-  "context-enrichments": "Context Enrichments",
+  "context-enrichment": "Context Enrichments",
   "contextual-messages": "Contextual Messages"
 }
