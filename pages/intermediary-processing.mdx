@@ -1,13 +1,10 @@
 import { Cards, Card } from 'nextra/components';
 import {
-  ChatBubbles,
-  Menu,
-  PencilEdit,
-  Sparkles,
-  SquaresPlus,
-  Swatch,
-  Film,
-  CpuChip,
+  ArrowPath,
+  ArrowPointingOut,
+  Clock,
+  CursorArrowRipple,
+  QuestionMark,
   LightBulb,
 } from '@components/icons';
 
@@ -23,33 +20,28 @@ During this phase, the AI system might be fetching additional data, analyzing in
 
 <Cards num={2}>
   <Card
-    href='/intermediary-processing/cindeterminate-progress'
+    href='/intermediary-processing/indeterminate-progress'
     title='Indeterminate Progress'
-    icon={<ChatBubbles />}
+    icon={<QuestionMark />}
   />
   <Card
     href='/intermediary-processing/determinate-progress'
     title='Determinate Progress'
-    icon={<Swatch />}
+    icon={<Clock />}
   />
   <Card
     href='/intermediary-processing/interactive-indicators'
     title='Interactive Indicators'
-    icon={<Menu />}
+    icon={<CursorArrowRipple />}
   />
   <Card
     href='/intermediary-processing/context-enrichment'
     title='Context Enrichment'
-    icon={<PencilEdit />}
+    icon={<ArrowPointingOut />}
   />
   <Card
     href='/intermediary-processing/contextual-messages'
     title='Contextual Messages'
-    icon={<LightBulb />}
-  />
-  <Card
-    href='/intermediary-processing/interactive-indicators'
-    title='Interactive Indicators'
     icon={<LightBulb />}
   />
 </Cards>
@@ -73,10 +65,6 @@ AI systems often need to pull in external data or perform additional computation
 ### Contextual Messages
 
 Providing contextual messages during processing can reassure users and enhance their understanding of the AI's operations. These messages can offer insights into what the AI is currently doing, why it's necessary, and how it benefits the final outcome.
-
-### Interactive Indicators
-
-Interactive indicators are dynamic visual elements that not only show the progress of AI operations but also allow users to interact with the process in real-time. These can range from adjusting the speed of processing, pausing the operation, or even providing additional inputs based on the progress shown. They are especially useful in maintaining user engagement and offering control during AI's intermediary processing stages.
 
 ## Conclusion
 
