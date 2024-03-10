@@ -8,17 +8,24 @@
   "design-principle": "Design Principles",
   "-- design-your-ai-product": {
     "type": "separator",
-    "title": "Design Your AI Product"
+    "title": "UX patterns for AI"
   },
   "context-building": "Context Building",
   "intermediary-processing": "Intermediary Processing",
   "presentation-of-results": "Presentation of Results",
   "refining-results": "Refining Results",
+  "-- build-and-grow": {
+    "type": "separator",
+    "title": "Build and Grow your AI Product"
+  },
   "monetization": "Monetization",
   "app-integration": "App Integration",
+  "-- build-better-product": {
+    "type": "separator",
+    "title": "Build Better Product"
+  },
   "development-guidelines": "Development Guidelines",
   "tools-and-resources": "Tools and Resources",
-  "case-studies": "Case Studies",
   "-- more": {
     "type": "separator",
     "title": "More"
