@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
+    "crisp-sdk-web": "^1.0.22",
     "next": "^14.1.2",
     "nextra": "^2.13.4",
     "nextra-theme-docs": "^2.13.4",

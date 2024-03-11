@@ -1,3 +1,4 @@
+import Layout from './components/layout';
 export default {
   logo: <span>UI pattern library for Generative AI product</span>,
   project: {
@@ -34,5 +35,8 @@ export default {
   chat: {
     link: 'https://discord.gg/AEUSxGKk',
   },
+
+  main: (props) => <Layout {...props} />,
+
   // ... other theme options
 };
