@@ -25,8 +25,8 @@ export default {
     text: (
       <span>
         MIT {new Date().getFullYear()} ©{' '}
-        <a href='https://usage.so' target='_blank'>
-          Usage.so
+        <a href='https://rezza.io' target='_blank'>
+          Rezza Inc.
         </a>
         .
       </span>
