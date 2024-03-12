@@ -20,3 +20,5 @@ export { default as User } from './user.svg';
 export { default as SpeakerWave } from './speaker-wave.svg';
 export { default as ArrowTrendUp } from './arrow-trend-up.svg';
 export { default as Hashtag } from './hashtag.svg';
+export { default as ChevronDoubleRight } from './chevron-double-right.svg';
+export { default as ChevronDoubleDown } from './chevron-double-down.svg';
