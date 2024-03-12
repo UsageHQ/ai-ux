@@ -22,3 +22,4 @@ export { default as ArrowTrendUp } from './arrow-trend-up.svg';
 export { default as Hashtag } from './hashtag.svg';
 export { default as ChevronDoubleRight } from './chevron-double-right.svg';
 export { default as ChevronDoubleDown } from './chevron-double-down.svg';
+export { default as ArrowUpRight } from './arrow-up-right.svg';
