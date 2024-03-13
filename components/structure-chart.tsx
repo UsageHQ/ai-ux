@@ -6,6 +6,9 @@ import React from 'react';
 export const StructureChart = () => {
   return (
     <div className='w-full flex flex-col border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 p-8 gap-y-8 rounded-2xl mt-8'>
+      <h2 className='text-2xl font-bold text-center text-neutral-900 dark:text-neutral-100'>
+        Natural progression of AI interactions
+      </h2>
       <div className='flex justify-center items-center flex-wrap md:flex-nowrap'>
         <Block href='/context-building'>Context Building</Block>
 
