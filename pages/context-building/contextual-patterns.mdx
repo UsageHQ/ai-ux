@@ -1,3 +1,9 @@
+import { SampleUI } from '@components/sample-ui';
+import CopilotContextual from '@assets/copilot-contextual.webp';
+import NotionContextual from '@assets/notion-contextual.webp';
+import ArcContextual from '@assets/arc-contextual.webp';
+import VSCodeContextual from '@assets/vscode-contextual.webp';
+
 # Contextual Patterns in AI UX Design
 
 <div className='bg-neutral-100 dark:bg-neutral-800 px-16 py-10 border'>
@@ -34,3 +40,30 @@ The rationale behind focusing on contextual patterns in AI UX design is to move 
 - **Reducing User Effort**: By anticipating user needs and preferences, AI applications can minimize the effort required from users to find what they're looking for or to input information.
 - **Building Trust and Loyalty**: When users see that an application understands their needs and respects their time, they're more likely to trust and continue using the service.
 - **Improving Service Accuracy**: Tailoring responses and options based on context ensures that users receive more accurate and relevant information, enhancing the overall utility of the AI application.
+
+## Examples
+
+<br />
+<div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
+  <SampleUI
+    src={CopilotContextual}
+    desc='Github Copilot on VS Code'
+    productUrl='https://github.com/features/copilot'
+  />
+    <SampleUI
+    src={NotionContextual}
+    desc='Notion AI-Powered Templates'
+    productUrl='https://notion.so'
+  />
+    <SampleUI
+    src={ArcContextual}
+    desc='AI link preview with Arc Browser'
+    productUrl='https://thebrowser.company/'
+  />
+    <SampleUI
+    src={VSCodeContextual}
+    desc='Auto generated git commit message on VS Code'
+    productUrl='https://code.visualstudio.com/'
+  />
+
+</div>

@@ -13,6 +13,7 @@ export const SampleUI = ({ src, desc, productUrl }: SampleUIProps) => {
       <div className='w-full aspect-square relative rounded-2xl border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 overflow-clip hover:scale-150 hover:z-20 transition-transform hover:shadow-md ease-in-out dark:shadow-neutral-800'>
         <Image src={src} fill alt={desc} className='object-contain' />
       </div>
+
       <Link
         className='italic text-blue-500 hover:text-blue-700'
         href={productUrl}
