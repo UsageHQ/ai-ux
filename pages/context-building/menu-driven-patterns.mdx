@@ -1,6 +1,38 @@
-# Menu-Driven Patterns in AI UX Design
+import { SampleUI } from '@components/sample-ui';
+import CopilotMenu from '@assets/copilot-menubased.webp';
+import FramerMenu from '@assets/framer-menubased.webp';
+import NotionMenu from '@assets/notion-menubased.webp';
+import PhotoshopMenu from '@assets/photoshop-menubased.webp';
 
-   <div className="bg-neutral-100 dark:bg-neutral-800 px-16 py-10 border">
+# Example of Menu-Driven Patterns
+
+<br />
+<div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
+  <SampleUI
+    src={FramerMenu}
+    desc='Rewriting contennt in Framer'
+    productUrl='https://www.framer.com/'
+  />
+  <SampleUI
+    src={NotionMenu}
+    desc='Content generation in Notion'
+    productUrl='https://notion.so'
+  />
+  <SampleUI
+    src={CopilotMenu}
+    desc='Github Copilot on VS Code'
+    productUrl='https://github.com/features/copilot'
+  />
+  <SampleUI
+    src={PhotoshopMenu}
+    desc='Generative fill in Photoshop'
+    productUrl='https://www.framer.com/'
+  />
+</div>
+
+<br />
+
+   <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 p-8 rounded-lg">
     **Problem**: Users often struggle to articulate their needs in open-ended AI interfaces, leading to frustration and inefficiency.
 
     **Example**: A user unsure of how to request a specific service from a virtual assistant faces difficulty in initiating the desired action.
@@ -8,8 +40,6 @@
     **Usage**: This pattern is crucial in applications where the AI must understand user intent from a broad range of possibilities, such as in virtual assistants, complex search tools, and customer service bots.
 
   </div>
-
----
 
 ## Solution
 
