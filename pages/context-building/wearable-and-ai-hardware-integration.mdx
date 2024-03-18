@@ -1,4 +1,30 @@
-# Wearable and AI-Hardware Integration in AI UX Design
+import { SampleUI } from '@components/sample-ui';
+import RabbitR1 from '@assets/rabbit-r1-hardware.webp';
+import AIPin from '@assets/aipin-hardware.webp';
+import FrameGlasses from '@assets/frame-glasses-hardware.webp';
+
+## Examples of Multimedia Inputs in AI UX Design
+
+<br />
+<div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
+  <SampleUI
+    src={RabbitR1}
+    desc='Image recognition with Rabbit R1'
+    productUrl='https://www.rabbit.tech/rabbit-r1'
+  />
+  <SampleUI
+    src={AIPin}
+    desc='Voice input with AI Pin from Humane'
+    productUrl='https://humane.com/aipin'
+  />
+  <SampleUI
+    src={FrameGlasses}
+    desc='Image recognition with Brilliant Frame Glasses'
+    productUrl='https://brilliant.xyz/'
+  />
+
+</div>
+<br />
 
    <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 p-8 rounded-lg">
     **Problem**: Traditional screen-based interactions often limit the context AI systems can use, relying heavily on explicit user inputs which may not fully capture the user's environment or physical state.
