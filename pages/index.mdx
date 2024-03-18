@@ -6,6 +6,7 @@ import ContextBuilding from '@assets/chatgpt-chat.webp';
 import IntermediaryProcessing from '@assets/photoshop-menubased.webp';
 import DeliveringResults from '@assets/synthesia-formbased.webp';
 import RefiningResults from '@assets/vscode-contextual.webp';
+import { IntroCard } from '@components/intro-card';
 
 # AI Product UX Patterns Collection
 
@@ -40,15 +41,13 @@ The AI Product UX Patterns Collection is a curated set of UX patterns for builde
     link: '/patterns/refining-results',
   },
 ].map((pattern, index) => (
-  <Link href={pattern.link} key={index} className="flex flex-col rounded-2xl border border-neutral-200 dark:border-neutral-700 overflow-clip">
-    <div className="relative w-full aspect-video bg-neutral-50 dark:bg-neutral-800">
-      <Image src={pattern.image} alt={pattern.title} fill className='object-cover' size="100%"/>
-    </div>
-    <div className="w-full flex flex-col p-4">
-      <p className="text-lg font-bold">{pattern.title}</p>
-      <p className='m-0 text-neutral-500'>{pattern.description}</p>
-    </div>
-  </Link>
+  <IntroCard
+    key={index}
+    title={pattern.title}
+    description={pattern.description}
+    image={pattern.image}
+    href={pattern.link}
+  />
 ))}
 
 </div>

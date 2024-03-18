@@ -10,68 +10,84 @@ import {
   CpuChip,
   LightBulb,
 } from '@components/icons';
+import { IntroCard } from '@components/intro-card';
+import ChatGPT from '@assets/chatgpt-chat.webp';
+import Arc from '@assets/arc-contextual.webp';
+import Notion from '@assets/notion-menubased.webp';
+import Linkedin from '@assets/linkedin-formbased.webp';
+import Gmail from '@assets/gmail-smartcompose-autocomplete.webp';
+import Canva from '@assets/canva-multimedia.webp';
+import Rabbit from '@assets/rabbit-r1-hardware.webp';
 
 import { Promotion } from '@components/promotion';
 
-# Overview of Context Building in AI-Driven UX
+# Context Building in AI-Driven UX
 
-Context building is an essential facet of user experience (UX) design for AI-driven products. It refers to the methods used to gather, interpret, and utilize data to deliver personalized and relevant experiences. In the context of Generative AI, this becomes even more pertinent, as these systems rely on the quality and specificity of input to generate useful and coherent outputs. Let’s explore the various patterns and approaches that define context building in the realm of AI UX.
+###### The methods used to gather, interpret, and utilize data to deliver personalized and relevant experiences.
 
-## The Importance of Context
+In any AI system, context acts as the lens through which the technology understands and responds to user requests. Proper context building allows AI to act more like an intuitive human assistant rather than a rigid, rule-based machine. Here are several key patterns in context building that enable AI systems to understand and predict user needs more effectively:
 
-In any AI system, context acts as the lens through which the technology understands and responds to user requests. Without context, interactions can feel disjointed and irrelevant, breaking the user’s sense of flow and immersion. Proper context building allows AI to act more like an intuitive human assistant rather than a rigid, rule-based machine.
-
-## Patterns for Context Building
-
-Here are several key patterns in context building that enable AI systems to understand and predict user needs more effectively:
-
-<Cards num={2}>
-  <Card
-    href='/context-building/conversational-patterns'
-    title='Converstaional Pattern'
-    icon={<ChatBubbles />}
-  />
-  <Card
-    href='/context-building/contextual-patterns'
-    title='Contextual Patterns'
-    icon={<Swatch />}
-  />
-  <Card
-    href='/context-building/menu-driven-patterns'
-    title='Menu-Driven Patterns'
-    icon={<Menu />}
-  />
-  <Card
-    href='/context-building/form-based-patterns'
-    title='Form-Based Patterns'
-    icon={<PencilEdit />}
-  />
-  <Card
-    href='/context-building/guided-input-patterns'
-    title='Guided Input Patterns'
-    icon={<LightBulb />}
-  />
-  <Card
-    href='/context-building/sequential-data-input-patterns'
-    title='Sequential Data Input Patterns'
-    icon={<SquaresPlus />}
-  />
-  <Card
-    href='/context-building/predictive-and-autocomplete-patterns'
-    title='Predictive and Autocomplete Patterns'
-    icon={<Sparkles />}
-  />
-  <Card
-    href='/context-building/multimedia-inputs'
-    title='Multimedia Inputs'
-    icon={<Film />}
-  />
-  <Card
-    href='/context-building/wearable-and-ai-hardware-integration'
-    title='Wearable and AI-Hardware Integration'
-    icon={<CpuChip />}
-  />
-</Cards>
+<div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-6 py-8'>
+  {[
+    {
+      title: 'Conversational Patterns',
+      description:
+        'Leverage natural language processing (NLP) to allow users to interact with AI in a conversational manner, akin to human dialogue.',
+      image: ChatGPT,
+      href: '/context-building/conversational-patterns',
+    },
+    {
+      title: 'Contextual Patterns',
+      description:
+        "Use the user's current situation and historical data to tailor responses, offering more personalized experiences.",
+      image: Arc,
+      href: '/context-building/contextual-patterns',
+    },
+    {
+      title: 'Menu-Driven Patterns',
+      description:
+        'Guide users through a structured set of options, particularly useful when the AI needs to narrow down user intent.',
+      image: Notion,
+      href: '/context-building/menu-driven-patterns',
+    },
+    {
+      title: 'Form-Based Patterns',
+      description:
+        'Provide a way for users to input specific, detailed data that the AI needs to generate accurate results.',
+      image: Linkedin,
+      href: '/context-building/form-based-patterns',
+    },
+    {
+      title: 'Guided Input Patterns',
+      description:
+        'Take users through a series of decisions, contextualizing each step to gather incremental information.',
+      image: Gmail,
+      href: '/context-building/guided-input-patterns',
+    },
+    {
+      title: 'Sequential Data Input Patterns',
+      description:
+        "Guide users through complex data entry, ensuring they aren't overwhelmed with requests for information.",
+      image: Canva,
+      href: '/context-building/sequential-data-input-patterns',
+    },
+    {
+      title: 'Predictive and Autocomplete Patterns',
+      description:
+        'Leverage historical data and predictive models to forecast user input, speeding up the data entry process.',
+      image: Rabbit,
+      href: '/context-building/predictive-and-autocomplete-patterns',
+    },
+  ].map((pattern, index) => (
+    <IntroCard
+      key={index}
+      title={pattern.title}
+      description={pattern.description}
+      image={pattern.image}
+      href={pattern.href}
+    />
+  ))}
+</div>
 
       <Promotion>
         <strong>Want to explore more about building AI product?</strong>
