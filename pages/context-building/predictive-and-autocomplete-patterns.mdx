@@ -1,5 +1,30 @@
-# Predictive and Autocomplete Patterns in AI UX Design
+import { SampleUI } from '@components/sample-ui';
+import Copilot from '@assets/copilot-autocomplete.webp';
+import Gmail from '@assets/gmail-autocomplete.webp';
+import GmailSmartCompose from '@assets/gmail-smartcompose-autocomplete.webp';
 
+## Examples of Predictive and Autocomplete
+
+<br />
+<div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
+  <SampleUI
+    src={Copilot}
+    desc='Autocomplete by Copilot in VS Code'
+    productUrl='https://code.visualstudio.com/'
+  />
+  <SampleUI
+    src={Gmail}
+    desc='Autocomplete in Gmail'
+    productUrl='https://github.com/features/copilot'
+  />
+  <SampleUI
+    src={GmailSmartCompose}
+    desc='Smart Compose in Gmail'
+    productUrl='https://gmail.com/'
+  />
+
+</div>
+<br />
    <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 p-8 rounded-lg">
     **Problem**: Manual data entry is time-consuming, prone to errors, and can significantly slow down user interaction, especially in applications requiring extensive input.
 

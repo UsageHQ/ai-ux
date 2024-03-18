@@ -1,4 +1,30 @@
-# Form-Based Patterns in AI UX Design
+import { SampleUI } from '@components/sample-ui';
+import Linkedin from '@assets/linkedin-formbased.webp';
+import Notion from '@assets/notion-formbased.webp';
+import Synthesia from '@assets/synthesia-formbased.webp';
+
+## Examples of Form-Based Patterns
+
+<br />
+<div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
+  <SampleUI
+    src={Linkedin}
+    desc='Generate job description in LinkedIn'
+    productUrl='https://www.linkedin.com/'
+  />
+  <SampleUI
+    src={Notion}
+    desc='Setup autofill in Notion'
+    productUrl='https://www.notion.so'
+  />
+  <SampleUI
+    src={Synthesia}
+    desc='Generate video from text in Synthesia'
+    productUrl='https://www.synthesia.io/'
+  />
+
+</div>
+<br />
 
    <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 p-8 rounded-lg">
     **Problem**: AI systems often require specific, detailed information to generate accurate and relevant outcomes, but obtaining this data from users can be challenging without overwhelming them.

@@ -1,11 +1,16 @@
 {
   "-- overview": {
     "type": "separator",
-    "title": "Overview"
+    "title": "Overview",
+    "display": "hidden"
   },
   "index": "Introduction",
-  "overview-of-ai-design": "Overview of AI Design",
-  "design-principle": "Design Principles",
+  "overview-of-ai-design": {
+    "display": "hidden"
+  },
+  "design-principle": {
+    "display": "hidden"
+  },
   "-- design-your-ai-product": {
     "type": "separator",
     "title": "UX patterns for AI"
@@ -16,16 +21,20 @@
   "refining-results": "Refining Results",
   "-- build-and-grow": {
     "type": "separator",
-    "title": "Build and Grow your AI Product"
+    "title": "Scale & Grow your AI Product"
   },
-  "monetization": "Monetization",
-  "app-integration": "App Integration",
-  "-- build-better-product": {
-    "type": "separator",
-    "title": "Build Better Product"
+  "usage-control": "Usage control (coming soon)",
+  "monetization": "Monetization (coming soon)",
+  "app-integration": {
+    "display": "hidden"
   },
-  "development-guidelines": "Development Guidelines",
-  "tools-and-resources": "Tools and Resources",
+
+  "development-guidelines": {
+    "display": "hidden"
+  },
+  "tools-and-resources": {
+    "display": "hidden"
+  },
   "-- more": {
     "type": "separator",
     "title": "More"

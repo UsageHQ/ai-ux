@@ -1,13 +1,57 @@
 import { StructureChart } from '@components/structure-chart';
 import { RefLink } from '@components/reference';
+import Link from 'next/link';
+import Image from 'next/image';
+import ContextBuilding from '@assets/chatgpt-chat.webp';
+import IntermediaryProcessing from '@assets/photoshop-menubased.webp';
+import DeliveringResults from '@assets/synthesia-formbased.webp';
+import RefiningResults from '@assets/vscode-contextual.webp';
 
-# AI Design Patterns Collection
+# AI Product UX Patterns Collection
 
-In the dynamic landscape of artificial intelligence, navigating the path from concept to creation is both challenging and thrilling. Recognizing the obstacles designers and developers encounter, we have dedicated ourselves to compiling a comprehensive patterns collection. This collection doesn't claim to invent new principles; instead, it gathers, refines, and organizes existing patterns and practices into a cohesive resource to demystify the complexities of AI product design.
+#### An opensource collections of popular UX pattern for AI products
 
-## Our Purpose: Shedding Light on the Path
+The AI Product UX Patterns Collection is a curated set of UX patterns for builder focused on creating intuitive and effective user experiences in AI-driven applications. It's designed to support builders in navigating the complexities of AI UX design, supporting you on building applications that are both powerful and user-friendly, regardless of the underlying technology or framework.
 
-Our mission is ambitious yet straightforward: to offer you a carefully consolidated collection that simplifies the process of researching for your next AI application. We've delved deep into design literature, case studies, and real-world applications to gather proven patterns and strategies. This effort aims to empower you with the knowledge and tools necessary to create AI experiences that profoundly resonate with users.
+<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6 py-8">
+{[
+  {
+    title: 'Context Building',
+    description: 'Set the stage for understanding user needs and intent.',
+    image: ContextBuilding,
+    link: '/patterns/context-building',
+  },
+  {
+    title: 'Intermediary Processing',
+    description: 'Keep users engaged as the AI analyzes and processes data.',
+    image: IntermediaryProcessing,
+    link: '/patterns/intermediary-processing',
+  },
+  {
+    title: 'Delivering Results',
+    description: 'Focus on how best to present AI-generated insights.',
+    image: DeliveringResults,
+    link: '/patterns/delivering-results',
+  },
+  {
+    title: 'Refining Results',
+    description: 'Offer users the opportunity to tweak and perfect these outcomes.',
+    image: RefiningResults,
+    link: '/patterns/refining-results',
+  },
+].map((pattern, index) => (
+  <Link href={pattern.link} key={index} className="flex flex-col rounded-2xl border border-neutral-200 dark:border-neutral-700 overflow-clip">
+    <div className="relative w-full aspect-video bg-neutral-50 dark:bg-neutral-800">
+      <Image src={pattern.image} alt={pattern.title} fill className='object-cover' size="100%"/>
+    </div>
+    <div className="w-full flex flex-col p-4">
+      <p className="text-lg font-bold">{pattern.title}</p>
+      <p className='m-0 text-neutral-500'>{pattern.description}</p>
+    </div>
+  </Link>
+))}
+
+</div>
 
 ## The Structure
 
