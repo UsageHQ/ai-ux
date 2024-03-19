@@ -33,7 +33,7 @@ export default {
     ),
   },
   chat: {
-    link: 'https://discord.gg/AEUSxGKk',
+    link: 'https://discord.gg/taVR5X9hfw',
   },
 
   main: (props) => <Layout {...props} />,
