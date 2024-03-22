@@ -2,18 +2,20 @@ import { SampleUI } from '@components/sample-ui';
 import MidJourney from '@assets/midjourney-progress.webp';
 import Synthesia from '@assets/synthesia-progress.webp';
 
-## Examples of Determinate Progress Indicators in AI UX Design
+## Examples of Determinate Progress Indicators
 
 <br />
 <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
   <SampleUI
     src={MidJourney}
-    desc= 'Progress details on Midjourney when generating images'
+    appName='Midjourney'
+    desc= 'When generating images, Midjourney shows clear current progress. It tells users if prompt is start to precess or not and the current progress. When images start to be generated, images will be progressively render to the user.'
     productUrl='https://midjourney.com/'
   />
     <SampleUI
     src={Synthesia}
-    desc='Progressive generate video on Synthesia'
+    appName='Synthesia'
+    desc="Synthesia show detail progress by showing the rendering progress. The video's screen will be show and the script will be filled gradually. It helps users know exactly what is happening and how long it will take."
     productUrl='https://www.synthesia.io/'
   />
 

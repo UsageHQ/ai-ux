@@ -1,24 +1,26 @@
 import { SampleUI } from '@components/sample-ui';
-import Canva from '@assets/Canva-progress.webp';
+import Canva from '@assets/canva-progress.webp';
 import ChatGPT from '@assets/chatgpt-progress.webp';
 
-## Examples of Determinate Progress Indicators in AI UX Design
+## Examples of Indeterminate Progress Indicators in AI UX Design
 
 <br />
 <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
   <SampleUI
     src={Canva}
-    desc= 'Unknown finish time when generating video on Canva'
+    appName= 'Canva'
+    desc= "Canva show random progress bar to represent the progress. The finish time and what happen currently is unknown. This is a basic pattern to reduce the user's anxiety if the process takes a long time."
     productUrl= 'https://www.canva.com/'
   />
     <SampleUI
     src={ChatGPT}
-    desc= 'Indeterminate progress when generating a response in ChatGPT'
+    appName= 'ChatGPT'
+    desc= "When talk to ChatGPT on mobile device, ChatGPT does not show the progress, they use an animation instead to relax the user. The user can see the AI is working on the task. This is a good pattern to reduce the user's anxiety."
     productUrl= 'https://chat.openai.com/'
   />
 
 </div>
-
+<br/>
    <div className="bg-neutral-100 dark:bg-neutral-800 px-16 py-10 border">
     **Problem**: Users may become frustrated or lose trust in the system when faced with AI operations that have unpredictable completion times, especially if left without updates or context.
 
