@@ -5,6 +5,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.18",
     "@svgr/webpack": "^8.1.0",
     "crisp-sdk-web": "^1.0.22",
     "next": "^14.1.2",

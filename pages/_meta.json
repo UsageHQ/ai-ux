@@ -15,10 +15,10 @@
     "type": "separator",
     "title": "UX patterns for AI"
   },
-  "context-building": "Context Building",
-  "intermediary-processing": "Intermediary Processing",
-  "presentation-of-results": "Presentation of Results",
-  "refining-results": "Refining Results",
+  "prompt-building": "Getting Context",
+  "intermediary-processing": "Intermediary Processing Patterns",
+  "presentation-of-results": "Results Presentation Patterns",
+  "refining-results": "Results refinement Patterns",
   "-- build-and-grow": {
     "type": "separator",
     "title": "Scale & Grow your AI Product"

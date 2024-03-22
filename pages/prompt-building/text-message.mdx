@@ -4,28 +4,32 @@ import Perplexity from '@assets/perplexity-chat.webp';
 import Copilot from '@assets/copilot-chat.webp';
 import BingCopilot from '@assets/bingchat-chat.webp';
 
-## Examples of Conversational Patterns
+## Examples of building context by inputting text as messages
 
 <br />
 <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
   <SampleUI
     src={ChatGPT}
-    desc='ChatGPT'
+    appName='ChatGPT'
+    desc='ChatGPT allows users to chat with an AI by typing messages or selecting from suggestions. This patterns provide a natural conversational experience like in other chat applications.'
     productUrl='https://chat.openai.com/'
   />
   <SampleUI
     src={Perplexity}
-    desc='Perplexity'
+    appName='Perplexity'
+    desc='Perplexity has difference in the way it the way users inputing the first message and the following ones. In the first message to initiate the conversation, they build similar UX to search or query products where they use suggestions to show similar query, this is a good way to help users form a better initial prompt. After the first message, the UX comes back to traditional conversation app.'
     productUrl='https://www.perplexity.ai'
   />
   <SampleUI
     src={Copilot}
-    desc='Github Copilot on VS Code'
+    appName='Github Copilot on VS Code'
+    desc='Github Copilot is an AI pair programmer that helps developers write code faster. It provides a chat-based UX to let users ask quesion right in VS code, this pattern let users chat with AI right in VS Code without switching to other app, maintaining the flow of coding.'
     productUrl='https://github.com/features/copilot'
   />
   <SampleUI
     src={BingCopilot}
-    desc='Copilot on Bing'
+    appName='Copilot on Bing'
+    desc='Bing Copilot allow users select the conversation style when inputing the first prompt, this UX enhance the user experience by providing a more personalized experience.'
     productUrl='https://www.bing.com/chat'
   />
 </div>

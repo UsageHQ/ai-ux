@@ -1,34 +1,27 @@
 import { SampleUI } from '@components/sample-ui';
-import Canva from '@assets/canva-multimedia.webp';
-import Midjourney from '@assets/midjourney-multimedia.webp';
-import ChatGPT from '@assets/chatgpt-multimedia.webp';
+import AIPin from '@assets/aipin-hardware.webp';
+
 import ChatGPTVoice from '@assets/chatgpt-voice-multimedia.webp';
 
-## Examples of Multimedia Inputs in AI UX Design
+## Examples of how to capture the context in real world
 
 <br />
 <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
-  <SampleUI
-    src={Canva}
-    desc='Create video from photos in Canva'
-    productUrl='https://www.canva.com/magic-home'
-  />
-  <SampleUI
-    src={Midjourney}
-    desc='Image prompt by pasting link in Midjourney'
-    productUrl='https://www.midjourney.com/home'
-  />
-  <SampleUI
-    src={ChatGPT}
-    desc='Attach image in chat with ChatGPT'
-    productUrl='https://chat.openai.com/'
-  />
-   <SampleUI
-      src={ChatGPTVoice}
-      desc='Voice  chat with ChatGPT'
-      productUrl='https://chat.openai.com/'
-   />
 
+{' '}
+
+<SampleUI
+  src={ChatGPTVoice}
+  appName='Voice chat in ChatGPT mobile app'
+  desc='ChatGPT app on mobile allow users make a voice conversation with the AI assistant. This is the best way to create a interactive conversation with the AI where the behavior is the same with a realife conversation'
+  productUrl='https://chat.openai.com/'
+/>
+  <SampleUI
+    src={AIPin}
+    appName='AI Pin from Humane'
+    desc='Humane AI Pin let users tap on the pin and say the prompt. This protect the users privacy while the micro is not always on. And it make the interaction with AI in realife more natural and intuitive.'
+    productUrl='https://humane.com/aipin'
+  />
 </div>
 <br />
 

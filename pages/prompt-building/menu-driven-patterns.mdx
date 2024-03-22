@@ -3,30 +3,24 @@ import CopilotMenu from '@assets/copilot-menubased.webp';
 import FramerMenu from '@assets/framer-menubased.webp';
 import NotionMenu from '@assets/notion-menubased.webp';
 import PhotoshopMenu from '@assets/photoshop-menubased.webp';
+import VSCodeContextual from '@assets/vscode-contextual.webp';
 
-# Example of Menu-Driven Patterns
+# Example of using inline menu to trigger context-aware AI
 
 <br />
 <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
   <SampleUI
     src={FramerMenu}
-    desc='Rewriting contennt in Framer'
+    appName="Framer no-code website builder"
+    desc='In each text section, Framer provide an generate button to auto generate text content. Users do not need to type prompt, context will be captured automatically based on the current design of the page.'
     productUrl='https://www.framer.com/'
   />
+
   <SampleUI
-    src={NotionMenu}
-    desc='Content generation in Notion'
-    productUrl='https://notion.so'
-  />
-  <SampleUI
-    src={CopilotMenu}
-    desc='Github Copilot on VS Code'
-    productUrl='https://github.com/features/copilot'
-  />
-  <SampleUI
-    src={PhotoshopMenu}
-    desc='Generative fill in Photoshop'
-    productUrl='https://www.framer.com/'
+    src={VSCodeContextual}
+    appName="Auto generate commit message in VSCode"
+    desc="VS code provide a generate button on Commit message input box. Users can click the button to auto generate commit message based on the changes made in the code. Copilot will look at all the change to get the context without the need of user to type anything."
+    productUrl='https://www.adobe.com/products/photoshop.html'
   />
 </div>
 

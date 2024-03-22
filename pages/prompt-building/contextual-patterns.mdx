@@ -3,30 +3,32 @@ import CopilotContextual from '@assets/copilot-contextual.webp';
 import NotionContextual from '@assets/notion-contextual.webp';
 import ArcContextual from '@assets/arc-contextual.webp';
 import VSCodeContextual from '@assets/vscode-contextual.webp';
+import CopilotMenu from '@assets/copilot-menubased.webp';
+import FramerMenu from '@assets/framer-menubased.webp';
+import NotionMenu from '@assets/notion-menubased.webp';
+import PhotoshopMenu from '@assets/photoshop-menubased.webp';
 
-## Examples of Contextual Patterns
+## Examples of slecting text from existing content to build context
 
 <br />
 <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
-  <SampleUI
-    src={CopilotContextual}
-    desc='Github Copilot on VS Code'
-    productUrl='https://github.com/features/copilot'
-  />
-    <SampleUI
-    src={NotionContextual}
-    desc='Notion AI-Powered Templates'
-    productUrl='https://notion.so'
-  />
     <SampleUI
     src={ArcContextual}
-    desc='AI link preview with Arc Browser'
+    appName='AI link preview with Arc Browser'
+    desc='Arc browser allow users to hover on a text as link and get a preview of the content. This is a way to provide contextual information that embedded into users natural flow of browsing.'
     productUrl='https://thebrowser.company/'
   />
-    <SampleUI
-    src={VSCodeContextual}
-    desc='Auto generated git commit message on VS Code'
-    productUrl='https://code.visualstudio.com/'
+  <SampleUI
+    src={NotionMenu}
+    appName='Content generation in Notion'
+    desc='Notion allow users select a block of text then prompt from that selection to generate a list of related content. Context can be enhanced by providing more relevant content and additional prompt based on the selection.'
+    productUrl='https://notion.so'
+  />
+  <SampleUI
+    src={CopilotMenu}
+    appName='Github Copilot on VS Code'
+    desc='Github Copilot allows users to select a block of code then prompt from that to take actions. Further action can be done by selecting pre-defined actions or manually input guide prompt'
+    productUrl='https://github.com/features/copilot'
   />
 
 </div>
