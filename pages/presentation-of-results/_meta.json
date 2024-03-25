@@ -1,10 +1,18 @@
 {
-  "textual-content": "Textual Content",
-  "code-response": "Code Response",
-  "visual-content": "Visual Content",
-  "video-content": "Video Content",
-  "audio-content": "Audio Content",
-  "interactive-ui": "Interactive UI",
-  "dynamic-outputs": "Dynamic Outputs",
-  "user-feedback": "User Feedback"
+  "textual-content": "Displaying text results with typing effect",
+  "code-response": {
+    "display": "hidden"
+  },
+  "visual-content": "Progressive render of visual content",
+  "video-content": {
+    "display": "hidden"
+  },
+  "audio-content": {
+    "display": "hidden"
+  },
+  "interactive-ui": "Present results with interactive elements",
+  "dynamic-outputs": {
+    "display": "hidden"
+  },
+  "user-feedback": "Collect users feedbacks on the results"
 }

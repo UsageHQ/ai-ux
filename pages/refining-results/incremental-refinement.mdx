@@ -1,4 +1,25 @@
-# Incremental Refinement in AI Result Optimization
+import { SampleUI } from '@components/sample-ui';
+import Midjourney from '@assets/midjourney-redo.webp';
+
+## Examples of regenerating content
+
+<br />
+<div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
+  <SampleUI
+    src={Midjourney}
+    appName='Midjourney'
+    desc='Midjourney provide a redo button to let users regenerate photos, button is attached right under the results. The prompt will be reused to generate new results.'
+    productUrl='https://midjourney.com/'
+  />
+  <SampleUI
+    src={v0}
+    appName='Frontend code generator with Vercel v0'
+    desc="v0 provide a regenerate button to let users regenerate the code. The prompt will be reused to generate new results."
+    productUrl='https://v0.dev/'
+  />
+
+</div>
+<br />
 
 <div className="bg-neutral-100 dark:bg-neutral-800 px-16 py-10 border">
 **Example**: A user interacting with a photo editing AI notices that the auto-enhance feature slightly over-saturates the colors. The user seeks a more subtle enhancement but the AI offers no middle ground.

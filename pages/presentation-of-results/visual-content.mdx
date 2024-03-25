@@ -1,13 +1,22 @@
-# Visual Content in AI Result Presentation
+import { SampleUI } from '@components/sample-ui';
+import Midjourney from '@assets/midjourney-progress.webp';
 
-   <div className="bg-neutral-100 dark:bg-neutral-800 px-16 py-10 border">
-    **Problem**: Users often struggle to grasp the significance or implications of complex data sets when presented in a purely textual format. This can lead to misunderstandings or underutilization of the information provided by AI systems.
+## Examples of progressive render visual contents
 
-    **Example**: An AI system analyzing climate data presents its findings in a long textual report, which might be comprehensive but fails to immediately convey patterns, trends, or anomalies that are critical for quick decision-making.
+{' '}
 
-    **Usage**: This pattern is crucial across a broad spectrum of AI applications, from environmental monitoring and financial analysis to health diagnostics and customer behavior insights, where the visualization of data can dramatically enhance comprehension and engagement.
+<br />
+<div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
+  <SampleUI
+      src={Midjourney}
+      appName='Midjourney'
+      desc="When displaying result in Midjourney, photos are displayed in a progressive manner. This helps in providing a visual cue to the user that the result is being loaded. This can be useful in providing a visual feedback to the user and make the result more engaging."
+      productUrl='https://midjourney.com/'
+      />
 
-   </div>
+</div>
+
+<br />
 
 ## Solution
 

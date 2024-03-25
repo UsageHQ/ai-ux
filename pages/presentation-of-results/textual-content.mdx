@@ -1,4 +1,34 @@
-# Textual Content in AI Result Presentation
+import { SampleUI } from '@components/sample-ui';
+import ChatGPT from '@assets/chatgpt-chat.webp';
+import Perplexity from '@assets/perplexity-chat.webp';
+import Framer from '@assets/framer-menubased.webp';
+
+## Examples of process of enriching context from initial prompt
+
+<br />
+<div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
+  <SampleUI
+    src={ChatGPT}
+    appName='ChatGPT'
+    desc="Text responses in ChatGPT are displayed in typing effect. This is the most popular way of presenting textual content in chatbots. This helps in creating a conversational feel and maintaining user engagement, also reduce the cognitive load of reading long responses."
+    productUrl='https://www.chat.openai.com'
+  />
+   <SampleUI
+      src={Perplexity}
+      appName='Perplexity'
+      desc="Perplexity provide textual response together rich interaction elements like buttons, images, and more. This helps in providing more context to the user and make the response more engaging. This can be useful in providing more information or options to the user."
+      productUrl='https://perplexity.ai/'
+   />
+     <SampleUI
+    src={Framer}
+    appName="Framer no-code website builder"
+    desc='Textual resonses in Framer are displayed right in the place users request for. This helps in providing context to the user and make the response more engaging. This is a popular pattern when building app that provide inline information.'
+    productUrl='https://www.framer.com/'
+  />
+
+</div>
+
+<br />
 
    <div className="bg-neutral-100 dark:bg-neutral-800 px-16 py-10 border">
     **Problem**: Users can be overwhelmed or disengaged by AI-generated insights that are presented in a complex, technical, or verbose manner, leading to a lack of understanding and diminished trust in the AI system.

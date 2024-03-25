@@ -1,4 +1,28 @@
-# Interactive UI Components in AI Result Presentation
+import { SampleUI } from '@components/sample-ui';
+import Perplexity from '@assets/perplexity-chat.webp';
+import v0 from '@assets/v0-interactive.webp';
+
+## Examples of process of interactive element when presenting results
+
+<br />
+<div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
+
+<SampleUI
+  src={Perplexity}
+  appName='Perplexity'
+  desc='Perplexity provide textual response together rich interaction elements like buttons, images, and more. This helps in providing more context to the user and make the response more engaging. This can be useful in providing more information or options to the user.'
+  productUrl='https://perplexity.ai/'
+/>
+<SampleUI
+  src={v0}
+  appName='Generate frontend code with Vercel v0'
+  desc='When generating code and UI, v0 allow users to interact with the results to review, as well as viewing different options. Since the code generation takes long time to finish, these on-the-fly interactive elements can help users to understand the results better and reduce the anxiety of waiting.'
+  productUrl='https://v0.dev/'
+/>
+
+</div>
+
+<br />
 
    <div className="bg-neutral-100 dark:bg-neutral-800 px-16 py-10 border">
     **Problem**: Users often receive AI-generated results in static formats that don't allow for exploration or personalization, potentially leading to a passive and disengaged experience.
