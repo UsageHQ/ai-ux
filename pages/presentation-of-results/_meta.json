@@ -3,7 +3,10 @@
   "progressive-render": "Progressive render of results",
   "gen-structured-data": "Present structured data",
   "gen-multiple-results": "Present multiple results",
-  "interactive-ui": "Present results with interactive elements",
+  "interactive-ui": {
+    "title": "Present results with interactive elements",
+    "display": "hidden"
+  },
   "predictive-and-autocomplete-patterns": "Predictive and autocomplete patterns",
   "user-feedback": "Collect users feedbacks on the results"
 }
