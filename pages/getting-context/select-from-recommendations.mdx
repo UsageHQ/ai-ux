@@ -1,8 +1,10 @@
 import { SampleUI } from '@components/sample-ui';
 import FramerMenu from '@assets/framer-menubased.webp';
 import VSCodeContextual from '@assets/vscode-contextual.webp';
+import ArcContextual from '@assets/arc-contextual.webp';
+import Copilot from '@assets/copilot-reccommend.webp';
 
-# Example of using inline menu to trigger context-aware AI
+# Select content from the recommendations to create the context
 
 <br />
 <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
@@ -14,40 +16,44 @@ import VSCodeContextual from '@assets/vscode-contextual.webp';
   />
 
   <SampleUI
-    src={VSCodeContextual}
-    appName="Auto generate commit message in VSCode"
-    desc="VS code provide a generate button on Commit message input box. Users can click the button to auto generate commit message based on the changes made in the code. Copilot will look at all the change to get the context without the need of user to type anything."
+    src={Copilot}
+    appName="Copilot in VS code leverage the error signal to provide recommendations"
+    desc="In the error signal in VS Code, Copilot embedded recommend action to provide explanation or fix the issues. This is a form of recommending what context users should interact with."
     productUrl='https://www.adobe.com/products/photoshop.html'
+  />
+      <SampleUI
+    src={ArcContextual}
+    appName='AI link preview with Arc Browser'
+    desc='Arc browser allow users to hover on a text as link and get a preview of the content. This is a way to provide contextual information that embedded into users natural flow of browsing.'
+    productUrl='https://thebrowser.company/'
   />
 </div>
 
 <br />
 
-   <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 p-8 rounded-lg">
-    **Problem**: Users often struggle to articulate their needs in open-ended AI interfaces, leading to frustration and inefficiency.
+<div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 p-8 rounded-lg">
+    **Problem**: Users may not always know the best content to interact with AI for optimal outcomes, leading to time-consuming trial and error.
+    
+    **Example**: In a content creation platform, users could benefit from AI suggesting relevant articles or media to reference or enhance their work, rather than sifting through everything manually.
 
-    **Example**: A user unsure of how to request a specific service from a virtual assistant faces difficulty in initiating the desired action.
+    **Usage**: "Select from Recommendations" is especially useful in AI applications that can analyze user behavior and preferences to suggest relevant content, such as personalized reading apps, content creation tools, and learning platforms. It guides users to make more informed choices by highlighting system-recommended options.
 
-    **Usage**: This pattern is crucial in applications where the AI must understand user intent from a broad range of possibilities, such as in virtual assistants, complex search tools, and customer service bots.
-
-  </div>
+</div>
 
 ## Solution
 
-The Menu-Driven Pattern enhances UX by providing users with a structured interaction model. This pattern involves:
+The "Select from Recommendations" pattern enhances user interaction by allowing the AI system to recommend specific content for the user to select, streamlining the decision-making process:
 
-- **Structured Interaction**: Offering users a set of predefined options or questions that guide them through the process of specifying their needs.
-- **Hierarchical Organization**: Organizing options in a logical hierarchy that efficiently narrows down user intent as they progress through the menu.
-- **Dynamic Menus**: Adjusting the options presented based on the user's past interactions, current context, or the AI's understanding of the user's needs.
-- **Visual and Textual Cues**: Utilizing both visual (icons, buttons) and textual elements to make the menu intuitive and easy to navigate.
+- **Personalized Recommendations**: Utilizing AI to analyze user behavior and preferences to offer tailored content suggestions, ensuring relevance.
+- **Highlighted Options**: Clearly marking recommended options within the interface, making it easy for users to identify and select suggested content.
+- **Feedback Mechanism**: Incorporating a feedback loop where users can rate or respond to recommendations, allowing the AI to refine its suggestions over time.
+- **Dynamic Updating**: Ensuring recommendations are regularly updated based on new user interactions, keeping suggestions fresh and relevant.
 
 ## Rationale
 
-Adopting a Menu-Driven Pattern in the UX design of AI applications addresses several user needs and design challenges:
+Adopting the "Select from Recommendations" pattern offers several benefits to both users and AI systems:
 
-- **Clarifies User Intent**: By providing a structured set of options, it helps users articulate their needs without having to guess the right commands or queries.
-- **Reduces Cognitive Load**: Users don't need to remember specific commands or navigate complex interfaces, as the menu guides them through the interaction.
-- **Enhances Discoverability**: New or hidden features are more likely to be discovered when they're presented as part of a structured menu.
-- **Improves Accessibility**: Structured menus can be easier for users with certain disabilities to navigate, especially when designed with accessibility standards in mind.
-
-The Menu-Driven Pattern is a powerful tool in the AI UX designer's toolkit, offering a straightforward way to capture user intent and guide them to the desired outcome. By carefully designing menus that are intuitive, responsive, and tailored to the user's context, designers can significantly enhance the overall usability and effectiveness of AI applications.
+- **Streamlines Interaction**: By guiding users towards content that the AI deems relevant, this pattern significantly reduces the effort required to find and select useful content.
+- **Enhances User Experience**: Personalized and relevant recommendations can improve user satisfaction, as users feel the system understands their needs and interests.
+- **Increases Engagement**: Users are more likely to interact with content that has been specifically recommended to them, potentially leading to deeper engagement with the application.
+- **Improves System Efficiency**: Feedback on recommendations helps the AI system learn and improve, making future suggestions even more accurate and helpful.

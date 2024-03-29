@@ -1,7 +1,6 @@
 import { SampleUI } from '@components/sample-ui';
-import Linkedin from '@assets/linkedin-formbased.webp';
-import Notion from '@assets/notion-formbased.webp';
-import Synthesia from '@assets/synthesia-formbased.webp';
+import Linkedin from '@assets/linkedin-forminput.webp';
+import Synthesia from '@assets/synthesia-forminput.webp';
 
 ## Examples of using form to provide structured context
 
@@ -13,49 +12,40 @@ import Synthesia from '@assets/synthesia-formbased.webp';
     desc='Linkedin help job posters to generate job description using AI. They collect context via a form to let users enter relevant information related to the jobs. This help build a structured context, makes it easier for AI to generate job description.'
     productUrl='https://www.linkedin.com/'
   />
-  <SampleUI
-    src={Notion}
-    appName='Setup autofill in Notion'
-    desc="Notion uses a simple form to collect the context for autofill function. This context will be uses for all the fields that user wants to autofill."
-    productUrl='https://www.notion.so'
-  />
-  <SampleUI
-    src={Synthesia}
-    appName='Generate video from text in Synthesia'
-    desc='Synthesia is a platform to generate video from scripts. They collect the requirement via a form then use it as content for the video. This kind of pattern is useful when the needed context is complex and required structured data.'
-    productUrl='https://www.synthesia.io/'
-  />
+
+<SampleUI
+  src={Synthesia}
+  appName='Generate video from text in Synthesia'
+  desc='Synthesia is a platform to generate video from scripts. They collect the requirement via a form then use it as content for the video. This kind of pattern is useful when the needed context is complex and required structured data.'
+  productUrl='https://www.synthesia.io/'
+/>
 
 </div>
 <br />
 
-   <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 p-8 rounded-lg">
-    **Problem**: AI systems often require specific, detailed information to generate accurate and relevant outcomes, but obtaining this data from users can be challenging without overwhelming them.
+<div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 p-8 rounded-lg">
+    **Problem**: Users often face difficulty in providing the AI with comprehensive and organized information, which can lead to less accurate or relevant AI responses.
+    
+    **Example**: When trying to configure a complex AI-driven analytics tool, users might overlook crucial parameters or input data inconsistently, affecting the tool's effectiveness.
 
-    **Example**: A financial advisory AI application needs detailed financial information from users to provide personalized investment advice.
+    **Usage**: "Structured Input" is vital in scenarios where precise and comprehensive data collection is necessary for the AI to perform optimally, such as in setting up personalized recommendations, configuring AI-driven analytics, or initializing AI-based project management tools. It structures user input in an organized manner, ensuring clarity and completeness.
 
-    **Usage**: This pattern is essential in scenarios where the AI system needs precise inputs to function correctly, such as in financial planning tools, medical diagnosis aids, and personalized education platforms.
-
-  </div>
-
----
+</div>
 
 ## Solution
 
-Form-Based Patterns address this challenge by guiding users through the process of inputting the necessary data using structured forms. Key elements of this approach include:
+Implementing the "Structured Input" pattern involves guiding users through a structured form or wizard, making it straightforward for them to provide all necessary information accurately:
 
-- **Intuitive Form Design**: Creating forms that are easy to understand and navigate, using clear labels, logical groupings of information, and a visually appealing layout.
-- **Progressive Disclosure**: Presenting form fields in a sequence that makes sense to the user, revealing more detailed fields as necessary to avoid overwhelming users with too much information at once.
-- **Contextual Help and Tooltips**: Providing users with in-form assistance, such as tooltips or contextual help, that can guide them through providing the required information.
-- **Validation and Feedback**: Implementing real-time validation and feedback to help users correct errors as they go, ensuring that the AI receives high-quality input data.
+- **Form-based Input**: Designing forms with clear fields, instructions, and validations to collect data methodically from users, enhancing the quality of input for AI processing.
+- **Step-by-Step Wizards**: Utilizing wizards to break down the data input process into manageable steps, helping users understand exactly what information is needed and why.
+- **Predefined Options and Helpers**: Including dropdowns, checkboxes, and tooltip helpers in forms and wizards to assist users in providing precise information and to prevent errors.
+- **Dynamic Form Adjustments**: Adapting the structure of the form or wizard based on previous inputs, ensuring that users are only presented with relevant fields, simplifying the process.
 
 ## Rationale
 
-The adoption of Form-Based Patterns in the UX design of AI applications is driven by the need for precise user inputs. This design strategy offers several advantages:
+The "Structured Input" pattern is designed with several key benefits in mind:
 
-- **Enhanced Data Accuracy**: By guiding users through the data entry process, form-based patterns help ensure that the AI receives the accurate, detailed information it needs to function correctly.
-- **Improved User Experience**: Well-designed forms minimize user frustration and errors, leading to a smoother and more positive interaction with the AI system.
-- **Increased User Engagement**: When users understand what information they need to provide and why it matters, they are more likely to engage fully with the AI application.
-- **Better Outcome Precision**: With accurate and detailed inputs, AI systems can generate more precise and useful outputs, leading to higher user satisfaction and trust in the AI application.
-
-Form-Based Patterns play a crucial role in the design of AI UX, enabling the collection of detailed and precise user inputs necessary for the effective operation of AI systems. By focusing on user-friendly form design, these patterns facilitate a seamless and efficient data collection process, enhancing both the accuracy of AI outputs and the overall user experience.
+- **Ensures Comprehensive Data Collection**: By systematically guiding users to provide all necessary details, this pattern helps in gathering complete and organized information, crucial for accurate AI analysis.
+- **Reduces User Errors**: Structured forms and wizards with validations and helpers minimize the chances of incorrect or incomplete inputs, leading to more reliable AI outcomes.
+- **Improves User Experience**: A clear and directed input process reduces user frustration associated with complex configurations or setups, making the system more user-friendly.
+- **Facilitates Efficient AI Processing**: Well-organized and complete data allows AI systems to perform more effectively, providing users with more relevant and accurate results.

@@ -1,64 +1,53 @@
 import { SampleUI } from '@components/sample-ui';
-import ArcContextual from '@assets/arc-contextual.webp';
 import CopilotMenu from '@assets/copilot-menubased.webp';
 import NotionMenu from '@assets/notion-menubased.webp';
 
-## Examples of slecting text from existing content to build context
+## Select an existing content to build the context
 
 <br />
 <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
-    <SampleUI
-    src={ArcContextual}
-    appName='AI link preview with Arc Browser'
-    desc='Arc browser allow users to hover on a text as link and get a preview of the content. This is a way to provide contextual information that embedded into users natural flow of browsing.'
-    productUrl='https://thebrowser.company/'
-  />
-  <SampleUI
-    src={NotionMenu}
-    appName='Content generation in Notion'
-    desc='Notion allow users select a block of text then prompt from that selection to generate a list of related content. Context can be enhanced by providing more relevant content and additional prompt based on the selection.'
-    productUrl='https://notion.so'
-  />
-  <SampleUI
-    src={CopilotMenu}
-    appName='Github Copilot on VS Code'
-    desc='Github Copilot allows users to select a block of code then prompt from that to take actions. Further action can be done by selecting pre-defined actions or manually input guide prompt'
-    productUrl='https://github.com/features/copilot'
-  />
+
+{' '}
+<SampleUI
+  src={NotionMenu}
+  appName='Content generation in Notion'
+  desc='Notion allow users select a block of text then prompt from that selection to generate a list of related content. Context can be enhanced by providing more relevant content and additional prompt based on the selection.'
+  productUrl='https://notion.so'
+/>
+<SampleUI
+  src={CopilotMenu}
+  appName='Github Copilot on VS Code'
+  desc='Github Copilot allows users to select a block of code then prompt from that to take actions. Further action can be done by selecting pre-defined actions or manually input guide prompt'
+  productUrl='https://github.com/features/copilot'
+/>
 
 </div>
 
 <br />
 
 <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 p-8 rounded-lg">
+    **Problem**: Users often need a faster, more intuitive way to interact with AI without starting from zero, especially when relevant content already exists.
+    
+    **Example**: When engaging with an AI to analyze text, users might find it cumbersome to retype or describe the text they're interested in; being able to directly select the text simplifies the process significantly.
 
-**Problem**: Users often receive generic and impersonal experiences from AI
-applications, leading to decreased engagement and satisfaction.
-
-**Example**: A user frequently books the same type of restaurant through a service app, yet
-the app fails to prioritize similar restaurant recommendations in future
-searches.
-
-**Usage**: Essential for applications that benefit from customizing
-user experiences based on past interactions and current context, such as
-recommendation engines, personalized assistants, and adaptive interfaces.
+    **Usage**: "Selecting Existing Content" is a pattern extensively used in AI applications that analyze or modify content, such as text editors with AI analysis tools, image editing software with AI enhancements, or data analysis tools. It enables users to directly choose the content they want the AI to work with, streamlining the interaction.
 
 </div>
 
 ## Solution
 
-Implementing contextual patterns in the UX design involves designing interfaces and interactions that efficiently capture and leverage user context and history. Key strategies include:
+Implementing the "Selecting Existing Content" pattern involves providing users with straightforward mechanisms to choose content that has already been created or is available within the application:
 
-- **Dynamic Input Fields**: Design input mechanisms that adapt based on the user's current context or previously entered information, reducing the effort needed to input data.
-- **Context-Aware Prompts**: Develop prompts and questions that are relevant to the user's current situation or recent activities, encouraging more meaningful engagement.
-- **Smart Defaults and Suggestions**: Use historical data to set smart defaults or offer suggestions that are likely to align with the user's preferences, streamlining decision-making processes.
-- **Visual Cues for Context**: Integrate visual cues and interface elements that reflect the user's current context, enhancing the sense of personalization and relevance.
+- **Text Highlighting**: Allowing users to highlight text as input for AI analysis or processing, making textual interactions quicker and more focused.
+- **Object Selection in Images**: Enabling users to select objects within images for AI to recognize or alter, enhancing user control over visual content.
+- **Data Point Selection**: Facilitating the selection of specific data points in datasets for detailed AI analysis, improving the precision of insights derived.
+- **Content Browsing and Selection**: Offering an intuitive interface for users to browse and select available content, such as documents, images, or datasets, for AI processing.
 
 ## Rationale
 
-The rationale behind focusing on contextual patterns in AI UX design is to move beyond one-size-fits-all solutions and create a more personalized user experience. This approach is grounded in:
+The "Selecting Existing Content" pattern addresses the need for efficient and precise AI interactions by leveraging already available content:
 
-- **Enhancing User Engagement**: Personalized experiences, informed by the user's context and history, are more engaging and satisfying, leading to increased user retention.
-- **Reducing User Effort**: By anticipating user needs and preferences, AI applications can minimize the effort required from users to find what they're looking for or to input information.
-- **Building Trust and Loyalty**: When users see that an application understands their needs and respects their time, they're more likely to trust and continue using the service.
-- **Improving Service Accuracy**: Tailoring responses and options based on context ensures that users receive more accurate and relevant information, enhancing the overall utility of the AI application.
+- **Increases Efficiency**: By eliminating the need to create input from scratch, this pattern speeds up the AI interaction process, saving users time.
+- **Enhances Accuracy**: Direct selection of content reduces errors that might occur in manual input, ensuring that the AI works with the exact content of interest.
+- **Improves User Satisfaction**: Streamlining the process of initiating AI interactions by selecting existing content makes the technology more accessible and enjoyable to use.
+- **Encourages Engagement**: Simplified interaction mechanisms encourage users to explore AI functionalities more deeply, potentially discovering new uses and applications.

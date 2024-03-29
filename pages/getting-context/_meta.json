@@ -1,6 +1,6 @@
 {
   "input-from-scratch": "Inputting prompt scratch",
-  "upload-content": "Attaching multimedia content",
+  "multimedia-context": "Getting multimedia context",
   "select-existing-content": "Selecting existing content",
   "select-from-recommendations": "Selecting from recommendations",
   "structured-input": "Structured input",

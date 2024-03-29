@@ -1,0 +1,88 @@
+import { SampleUI } from '@components/sample-ui';
+import Canva from '@assets/canva-multimedia.webp';
+import Midjourney from '@assets/midjourney-multimedia.webp';
+import ChatGPT from '@assets/chatgpt-multimedia.webp';
+import ChatGPTVoice from '@assets/chatgpt-voice-multimedia.webp';
+import AIPin from '@assets/aipin-hardware.webp';
+import RabbitR1 from '@assets/rabbit-r1-hardware.webp';
+import FrameGlasses from '@assets/frame-glasses-hardware.webp';
+
+## Examples of how to capture the context in real world
+
+<br />
+<div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
+  <SampleUI
+    src={RabbitR1}
+    appName='Image recognition with Rabbit R1'
+    desc='Rabbit R1 is an AI device, it allow users to turn the camera and point objects then ask AI about it. This behavior is similar to how we ask a friend about something we do not know and how we use the mobile device camera. It simple so users do not need to learn new behavior.'
+    productUrl='https://www.rabbit.tech/rabbit-r1'
+  />
+  <SampleUI
+    src={AIPin}
+    appName='AI Pin from Humane'
+    desc='Humane AI Pin let users show the objects to the camera and trigger the AI reconition by tapping on the pin. This way of interaction help protect users privacy since the camera is not always on. It also help users to focus on the object they want to know more about.'
+    productUrl='https://humane.com/aipin'
+  />
+  <SampleUI
+    src={FrameGlasses}
+    appName='Image recognition with Brilliant Frame Glasses'
+    desc='Brilliant Frame Glasses is a wearable device that can provide information about the world around. This kind of design let AI see what users see, it minimize the effort to get the context of the world around.'
+    productUrl='https://brilliant.xyz/'
+  />
+
+{' '}
+
+<SampleUI
+  src={ChatGPTVoice}
+  appName='Voice chat in ChatGPT mobile app'
+  desc='ChatGPT app on mobile allow users make a voice conversation with the AI assistant. This is the best way to create a interactive conversation with the AI where the behavior is the same with a realife conversation'
+  productUrl='https://chat.openai.com/'
+/>
+
+<SampleUI
+  src={Midjourney}
+  appName='Image prompt by pasting link in Midjourney'
+  desc='Midjourney allows users to paste a link to an image, which is then used as a prompt for generating creative content. This pattern is another way to getting the multimedia input without the need of an uploading process.'
+  productUrl='https://www.midjourney.com/home'
+/>
+<SampleUI
+  src={ChatGPT}
+  appName='Attach image in chat with ChatGPT'
+  desc='ChatGPT allows users to attach images in the chat to provide more context or ask questions related to the image. This pattern is completely the same as chat application, it helps reduce the learning curve for users.'
+  productUrl='https://chat.openai.com/'
+/>
+<SampleUI
+  src={ChatGPTVoice}
+  desc='Voice  chat with ChatGPT'
+  productUrl='https://chat.openai.com/'
+/>
+
+</div>
+<br />
+
+<div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 p-8 rounded-lg">
+    **Problem**: Efficiently integrating multimedia context into AI systems can be challenging, as users may have varied preferences for how they wish to provide this content, whether through uploading, recording, or linking.
+    
+    **Example**: A user wants to add a photo to an AI-driven design tool. They might prefer to upload it directly from their device, use a link from the web, or even capture a new photo using their device's camera.
+
+    **Usage**: "Getting Multimedia Context" is crucial for AI applications that process or analyze multimedia content, such as image recognition tools, video editing platforms, or voice-assisted applications. This pattern ensures users can seamlessly integrate multimedia into the AI interaction, using their preferred method.
+
+</div>
+
+## Solution
+
+To accommodate the diverse needs of users in providing multimedia content, the "Getting Multimedia Context" pattern incorporates multiple avenues for input:
+
+- **Direct Uploads**: Allowing users to upload files directly from their devices, supporting a range of file types to ensure compatibility.
+- **Recording Tools**: Integrating tools within the application that enable users to record audio or video, or capture images directly, facilitating real-time content creation.
+- **Link Integration**: Providing the option to input links to external multimedia content, which the AI can then fetch and process, expanding the sources of input.
+- **Drag-and-Drop Interfaces**: Implementing intuitive drag-and-drop interfaces for easy file uploading and rearrangement, enhancing the user experience.
+
+## Rationale
+
+The rationale behind incorporating the "Getting Multimedia Context" pattern includes:
+
+- **Flexibility in Content Provision**: Offering multiple methods to input multimedia content caters to user preferences and situational needs, enhancing the accessibility of the AI application.
+- **Simplifying Multimedia Integration**: By streamlining the process of adding multimedia content, users are more likely to utilize these features, enriching the AI interaction with valuable context.
+- **Enhancing User Experience**: Providing a seamless and intuitive way to include multimedia content reduces barriers to effective AI interaction, leading to higher user satisfaction.
+- **Improving AI Accuracy**: Access to a richer context through multimedia allows AI systems to perform more accurately and deliver results that are more aligned with user expectations.
