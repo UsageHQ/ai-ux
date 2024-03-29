@@ -15,25 +15,24 @@
     "type": "separator",
     "title": "UX patterns for AI"
   },
-  "prompt-building": "Getting Context",
+  "getting-context": "Getting Context",
   "intermediary-processing": "Intermediary Processing Patterns",
   "presentation-of-results": "Results Presentation Patterns",
-  "refining-results": "Results refinement Patterns",
-  "-- build-and-grow": {
+  "-- version-control": {
     "type": "separator",
-    "title": "Scale & Grow your AI Product"
+    "title": "Version control"
   },
-  "usage-control": "Usage control (coming soon)",
-  "monetization": "Monetization (coming soon)",
-  "app-integration": {
-    "display": "hidden"
+  "new-tree": "Create new branches",
+  "single-branch-tree": "Refine results by creating new prompt in current branch",
+  "multi-branch-tree": "Creating new branch in same tree when refining results",
+  "undo-and-redo": "Undo and redo",
+  "-- usage-control": {
+    "type": "separator",
+    "title": "Usage control (coming soon)"
   },
-
-  "development-guidelines": {
-    "display": "hidden"
-  },
-  "tools-and-resources": {
-    "display": "hidden"
+  "-- monetization": {
+    "type": "separator",
+    "title": "Monetization (coming soon)"
   },
   "-- more": {
     "type": "separator",

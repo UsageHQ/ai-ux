@@ -1,11 +1,35 @@
 import { SampleUI } from '@components/sample-ui';
-import AIPin from '@assets/aipin-hardware.webp';
+import Canva from '@assets/canva-multimedia.webp';
+import Midjourney from '@assets/midjourney-multimedia.webp';
+import ChatGPT from '@assets/chatgpt-multimedia.webp';
 import ChatGPTVoice from '@assets/chatgpt-voice-multimedia.webp';
+import AIPin from '@assets/aipin-hardware.webp';
+import RabbitR1 from '@assets/rabbit-r1-hardware.webp';
+import FrameGlasses from '@assets/frame-glasses-hardware.webp';
 
 ## Examples of how to capture the context in real world
 
 <br />
 <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
+  <SampleUI
+    src={RabbitR1}
+    appName='Image recognition with Rabbit R1'
+    desc='Rabbit R1 is an AI device, it allow users to turn the camera and point objects then ask AI about it. This behavior is similar to how we ask a friend about something we do not know and how we use the mobile device camera. It simple so users do not need to learn new behavior.'
+    productUrl='https://www.rabbit.tech/rabbit-r1'
+  />
+  <SampleUI
+    src={AIPin}
+    appName='AI Pin from Humane'
+    desc='Humane AI Pin let users show the objects to the camera and trigger the AI reconition by tapping on the pin. This way of interaction help protect users privacy since the camera is not always on. It also help users to focus on the object they want to know more about.'
+    productUrl='https://humane.com/aipin'
+  />
+  <SampleUI
+    src={FrameGlasses}
+    appName='Image recognition with Brilliant Frame Glasses'
+    desc='Brilliant Frame Glasses is a wearable device that can provide information about the world around. This kind of design let AI see what users see, it minimize the effort to get the context of the world around.'
+    productUrl='https://brilliant.xyz/'
+  />
+
   <SampleUI
     src={ChatGPTVoice}
     appName='Voice chat in ChatGPT mobile app'
@@ -18,6 +42,33 @@ import ChatGPTVoice from '@assets/chatgpt-voice-multimedia.webp';
     desc='Humane AI Pin let users tap on the pin and say the prompt. This protect the users privacy while the micro is not always on. And it make the interaction with AI in realife more natural and intuitive.'
     productUrl='https://humane.com/aipin'
   />
+</div>
+
+<div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
+  <SampleUI
+    src={Canva}
+    appName='Create video from photos in Canva'
+    desc='Canva let users select photos from their devides and adding a description about the video they want to create. This pattern is the most popular when getting multimedia input from users.'
+    productUrl='https://www.canva.com/magic-home'
+  />
+  <SampleUI
+    src={Midjourney}
+    appName='Image prompt by pasting link in Midjourney'
+    desc='Midjourney allows users to paste a link to an image, which is then used as a prompt for generating creative content. This pattern is another way to getting the multimedia input without the need of an uploading process.'
+    productUrl='https://www.midjourney.com/home'
+  />
+  <SampleUI
+    src={ChatGPT}
+    appName='Attach image in chat with ChatGPT'
+    desc='ChatGPT allows users to attach images in the chat to provide more context or ask questions related to the image. This pattern is completely the same as chat application, it helps reduce the learning curve for users.'
+    productUrl='https://chat.openai.com/'
+  />
+   <SampleUI
+      src={ChatGPTVoice}
+      desc='Voice  chat with ChatGPT'
+      productUrl='https://chat.openai.com/'
+   />
+
 </div>
 <br />
 

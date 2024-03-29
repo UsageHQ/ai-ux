@@ -3,5 +3,7 @@
   "determinate-progress": "Show detailed information determinate Progress",
   "interactive-indicators": "Interactive Indicators",
   "context-enrichment": "Enrich context by connecting to external source",
-  "contextual-messages": "Use contextual messages to make progress clear"
+  "contextual-messages": {
+    "display": "hidden"
+  }
 }
