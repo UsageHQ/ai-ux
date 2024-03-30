@@ -25,7 +25,6 @@
   "new-tree": "Create new branches",
   "single-branch-tree": "Refine results by creating new prompt in current branch",
   "multi-branch-tree": "Creating new branch in same tree when refining results",
-  "undo-and-redo": "Undo and redo",
   "-- usage-control": {
     "type": "separator",
     "title": "Usage control (coming soon)"
