@@ -1,82 +1,62 @@
 import { Cards, Card } from 'nextra/components';
 import {
-  ChatBubbles,
-  Menu,
-  PencilEdit,
-  Sparkles,
-  SquaresPlus,
-  Swatch,
-  Film,
-  CpuChip,
-  LightBulb,
+  Keyboard,
+  Camera,
+  HandPointer,
+  LightbulbOn,
+  ClipboardList,
 } from '@components/icons';
 import { IntroCard } from '@components/intro-card';
-import ChatGPT from '@assets/chatgpt-chat.webp';
-import Arc from '@assets/arc-contextual.webp';
-import Notion from '@assets/notion-menubased.webp';
-import Linkedin from '@assets/linkedin-forminput.webp';
-import Gmail from '@assets/gmail-smartcompose-autocomplete.webp';
-import Canva from '@assets/canva-multimedia.webp';
-import Rabbit from '@assets/rabbit-r1-hardware.webp';
+import Scratch from '@assets/chatgpt-chat.webp';
+import CameraIcon from '@assets/aipin-hardware.webp';
+import SelectContent from '@assets/copilot-menubased.webp';
+import Recommendations from '@assets/framer-menubased.webp';
+import FormInput from '@assets/linkedin-forminput.webp';
 
 import { Promotion } from '@components/promotion';
 
-# Context Building in AI-Driven UX
+# Getting Context in AI-Driven UX
 
-###### The methods used to gather, interpret, and utilize data to deliver personalized and relevant experiences.
+###### Gathering initial information effectively sets the stage for personalized and relevant AI interactions.
 
-In any AI system, context acts as the lens through which the technology understands and responds to user requests. Proper context building allows AI to act more like an intuitive human assistant rather than a rigid, rule-based machine. Here are several key patterns in context building that enable AI systems to understand and predict user needs more effectively:
+Understanding the user's intent and context is critical for AI to deliver meaningful responses. The "Getting Context" category encompasses a variety of patterns that help AI systems accurately capture and interpret user input. Here's a look at the key patterns that facilitate effective context gathering for AI applications:
 
 <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-6 py-8'>
   {[
     {
-      title: 'Conversational Patterns',
+      title: 'Inputting Prompt from Scratch',
       description:
-        'Leverage natural language processing (NLP) to allow users to interact with AI in a conversational manner, akin to human dialogue.',
-      image: ChatGPT,
-      href: '/context-building/conversational-patterns',
+        'Enables users to provide initial input freely, starting the interaction from a blank slate for open-ended queries.',
+      image: Scratch,
+      href: '/getting-context/input-from-scratch',
     },
     {
-      title: 'Contextual Patterns',
+      title: 'Capturing Multimedia Context',
       description:
-        "Use the user's current situation and historical data to tailor responses, offering more personalized experiences.",
-      image: Arc,
-      href: '/context-building/contextual-patterns',
+        'Allows users to input context through multimedia, such as photos, videos, or audio, enhancing the richness of data provided to AI.',
+      image: CameraIcon,
+      href: '/getting-context/multimedia-context',
     },
     {
-      title: 'Menu-Driven Patterns',
+      title: 'Selecting from Existing Free-form Content',
       description:
-        'Guide users through a structured set of options, particularly useful when the AI needs to narrow down user intent.',
-      image: Notion,
-      href: '/context-building/menu-driven-patterns',
+        'Users can select relevant pieces of content already available within the application, facilitating a direct and precise context setup.',
+      image: SelectContent,
+      href: '/getting-context/select-existing-content',
     },
     {
-      title: 'Form-Based Patterns',
+      title: 'Selecting from Structured Content',
       description:
-        'Provide a way for users to input specific, detailed data that the AI needs to generate accurate results.',
-      image: Linkedin,
-      href: '/context-building/form-based-patterns',
+        'This pattern enables users to choose from AI-recommended options or structured content, streamlining the context gathering process.',
+      image: Recommendations,
+      href: '/getting-context/select-from-recommendations',
     },
     {
-      title: 'Guided Input Patterns',
+      title: 'Inputting in Form-based Format',
       description:
-        'Take users through a series of decisions, contextualizing each step to gather incremental information.',
-      image: Gmail,
-      href: '/context-building/guided-input-patterns',
-    },
-    {
-      title: 'Sequential Data Input Patterns',
-      description:
-        "Guide users through complex data entry, ensuring they aren't overwhelmed with requests for information.",
-      image: Canva,
-      href: '/context-building/sequential-data-input-patterns',
-    },
-    {
-      title: 'Predictive and Autocomplete Patterns',
-      description:
-        'Leverage historical data and predictive models to forecast user input, speeding up the data entry process.',
-      image: Rabbit,
-      href: '/context-building/predictive-and-autocomplete-patterns',
+        'Provides structured forms or wizards for users to input data, ensuring comprehensive and accurate context collection.',
+      image: FormInput,
+      href: '/getting-context/structured-input',
     },
   ].map((pattern, index) => (
     <IntroCard
@@ -89,47 +69,9 @@ In any AI system, context acts as the lens through which the technology understa
   ))}
 </div>
 
-      <Promotion>
-        <strong>Want to explore more about building AI product?</strong>
-        Click here to contact us for a free consultation.
-      </Promotion>
+<Promotion>
+  <strong>Interested in diving deeper into AI UX?</strong>
+  Click here to explore more about effective context gathering techniques.
+</Promotion>
 
-### Conversational Patterns
-
-These patterns leverage natural language processing (NLP) to allow users to interact with AI in a conversational manner, akin to human dialogue. Such interfaces can interpret and remember the nuances of language, enabling more natural and fluid interactions.
-
-### Contextual Patterns
-
-Contextual patterns use the user's current situation and historical data to tailor responses. By understanding where a user is and what they’ve previously interacted with, AI can anticipate needs and offer more personalized experiences.
-
-### Menu-Driven Patterns
-
-AI UX can include menu-driven patterns, which guide users through a structured set of options. This method is particularly useful when the AI needs to narrow down user intent and can provide a quick and easy way for users to communicate their needs.
-
-### Form-Based Patterns
-
-Structured forms provide a way for users to input specific, detailed data that the AI needs to generate accurate results. This approach is valuable when precise variables are required for the AI to perform a task correctly.
-
-### Guided Input Patterns
-
-Guided input patterns, often seen in wizards or step-by-step guides, take users through a series of decisions. Each step contextualizes the next, allowing the AI to gather incremental information to understand the user’s end goal.
-
-### Sequential Data Input Patterns
-
-These patterns are vital when dealing with complex data entry. Progressive disclosure techniques ensure that users aren't overwhelmed with requests for information but are guided through the process in a logical, stepwise fashion.
-
-### Predictive and Autocomplete Patterns
-
-Leveraging historical data and predictive models, AI systems can forecast user input, speeding up the data entry process. These patterns not only save time but can also reduce errors and improve the overall efficiency of the interaction.
-
-### Multimedia Inputs
-
-Voice, images, and other non-textual inputs can provide rich context that text alone cannot. For instance, a picture may contain nuances that are hard to describe in words but are instantly recognizable to an AI with image recognition capabilities.
-
-### Wearable and AI-Hardware Integration
-
-Context building extends beyond screen-based interactions. Wearable devices and specialized AI hardware can provide a continuous stream of contextual data, from physiological signals to environmental information, enriching the user's interaction with the AI system.
-
-## Conclusion
-
-Effective context building is the cornerstone of a successful AI UX. It transforms the user experience from one that is transactional to one that is immersive, intuitive, and incredibly personalized. As AI technology continues to evolve, so too will the methods of context building, further bridging the gap between human and machine interaction.
+Effective context gathering is foundational to creating AI-driven applications that understand and meet user needs. By employing these patterns, developers can ensure their AI not only comprehends the user's input but does so in a way that feels intuitive and seamless, enhancing the overall experience.

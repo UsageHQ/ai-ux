@@ -1,107 +1,78 @@
 import { Cards, Card } from 'nextra/components';
 import {
-  Bars3BottomLeft,
-  CodeBracket,
-  Photo,
-  Film,
-  SpeakerWave,
-  CursorArrowRipple,
-  Sparkles,
-  User
-
+  Broadcast,
+  Layers,
+  Database,
+  Clone,
+  MagicWand,
 } from '@components/icons';
+import { IntroCard } from '@components/intro-card';
+import Streaming from '@assets/perplexity-chat.webp';
+import Progressive from '@assets/midjourney-progress.webp';
+import Structured from '@assets/v0-structured.webp';
+import Multiple from '@assets/midjourney-multiresults.webp';
+import Predictive from '@assets/gmail-autocomplete.webp';
+
 import { Promotion } from '@components/promotion';
 
-# Overview of Result Presentation in AI Product Interaction
+# Presentation of Results in AI-Driven UX
 
-The Presentation of Results is a critical phase in the AI product interaction process, marking the moment where data and analysis are translated into actionable insights for the user. This stage is integral to the user experience, as it directly impacts the user's ability to comprehend, trust, and utilize the information provided by the AI. Effective presentation strategies are essential for ensuring that the results are not only understandable and relevant but also engaging, thereby maximizing user satisfaction and trust in the AI system. Let's explore the various aspects and their importance in presenting results in AI interactions.
+###### Effectively conveying AI-generated outcomes to users through intuitive and interactive formats.
 
-## The Essence of Presenting Results
+Presenting results effectively is crucial for user comprehension and satisfaction in AI-driven applications. This category showcases patterns that optimize how results are delivered and explored, ensuring users can easily understand and interact with AI-generated data:
 
-At this juncture, the AI system reveals its conclusions, recommendations, or creations, derived from complex background processing. The manner in which these results are conveyed can greatly influence the user's perception of the AI's effectiveness and reliability. The challenge lies in making the presentation of results insightful, clear, and engaging, regardless of the underlying complexity of the data or the AI's operations.
+<div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-6 py-8'>
+  {[
+    {
+      title: 'Streaming Results',
+      description:
+        "Displays AI-generated content incrementally, as it's produced, allowing users to view results in real-time and maintain engagement.",
+      image: Streaming,
+      href: '/presentation-of-results/streaming-results',
+    },
+    {
+      title: 'Progressive Render of Results',
+      description:
+        'Gradually displays detailed layers of the results, helping users process complex information in manageable stages.',
+      image: Progressive,
+      href: '/presentation-of-results/progressive-render',
+    },
+    {
+      title: 'Present Structured Data',
+      description:
+        'Organizes results into a structured format, enabling users to navigate and interact with individual components for deeper insights.',
+      image: Structured,
+      href: '/presentation-of-results/gen-structured-data',
+    },
+    {
+      title: 'Present Multiple Results',
+      description:
+        'Offers users a variety of AI-generated options, facilitating comparison and selection of the preferred outcome.',
+      image: Multiple,
+      href: '/presentation-of-results/gen-multiple-results',
+    },
+    {
+      title: 'Predictive and Autocomplete Patterns',
+      description:
+        'Incorporates suggestions and completions into the user interface, speeding up tasks by predicting user needs.',
+      image: Predictive,
+      href: '/presentation-of-results/predictive-and-autocomplete-patterns',
+    },
+  ].map((pattern, index) => (
+    <IntroCard
+      key={index}
+      title={pattern.title}
+      description={pattern.description}
+      image={pattern.image}
+      href={pattern.href}
+    />
+  ))}
+</div>
 
-## Key Components of Presenting Results
+<Promotion>
+  <strong>Explore innovative ways to present AI results.</strong>
+  Check out our collection for strategies that enhance clarity, engagement, and user
+  satisfaction.
+</Promotion>
 
-<Cards num={2}>
-  <Card
-    href='/presentation-of-results/textual-content'
-    title='Textual Content'
-    icon={<Bars3BottomLeft />}
-  />
-  <Card
-    href='/presentation-of-results/code-responses'
-    title='Code Responses'
-    icon={<CodeBracket />}
-  />
-  <Card
-    href='/presentation-of-results/visual-content'
-    title='Visual Content'
-    icon={<Photo />}
-  />
-  <Card
-    href='/presentation-of-results/video-content'
-    title='Video Content'
-    icon={<Film />}
-  />
-  <Card
-    href='/presentation-of-results/audio-content'
-    title='Audio Content'
-    icon={<SpeakerWave />}
-  />
-  <Card
-    href='/presentation-of-results/interactive-ui'
-    title='Interactive UI Components'
-    icon={<CursorArrowRipple />}
-  />
-  <Card
-    href='/presentation-of-results/dynamic-outputs'
-    title='Dynamic Outputs'
-    icon={<Sparkles />}
-  />
-  <Card
-    href='/presentation-of-results/user-feedback'
-    title='User Feedback Collection'
-    icon={<User />}
-  />
-</Cards>
-
-      <Promotion>
-        <strong>Want to explore more about building AI product?</strong>
-        Click here to contact us for a free consultation.
-      </Promotion>
-
-### Textual Content
-
-Conveying AI-generated insights or responses in a textual format that is concise, clear, and contextually relevant. This requires careful consideration of language and structure to enhance readability and comprehension.
-
-### Visual Content
-
-Utilizing visual elements such as graphs, charts, images, and animations to represent data or results in a more intuitive and digestible manner. Visual content can significantly enhance understanding and engagement, especially with complex datasets.
-
-### Code Responses
-
-For AI applications aimed at developers or technical users, integrating code snippets or solutions directly into the results presentation can provide immediate value and utility, fostering a more efficient workflow.
-
-### Video Content
-
-Incorporating video content, either AI-generated or related, to provide dynamic and interactive explanations or summaries of the results, catering to users who prefer audio-visual content over text or static images.
-
-### Interactive UI Components
-
-Embedding interactive elements within the presentation of results allows users to explore data, adjust parameters, or drill down into specific aspects of the information provided, offering a more personalized and engaging experience.
-
-### Dynamic Outputs
-
-Adapting the presentation of results based on user input, preferences, or past interactions. This ensures that the information remains relevant and tailored to the user's specific needs or questions.
-
-### Audio Content
-
-Utilizing audio feedback or responses, especially in voice-activated AI systems, to deliver results in a way that's accessible and convenient, particularly for users on the go or those with visual impairments.
-
-### User Feedback Collection
-
-Integrating mechanisms for collecting user feedback on the results presented, enabling continuous improvement of the AI system based on user experiences and preferences.
-
-## Conclusion
-
-The presentation of results in AI product interaction is not just about delivering data; it's about creating a meaningful, engaging, and personalized experience that enhances the user's understanding and trust in the AI system. Through thoughtful design and strategic implementation of various presentation components, AI products can achieve a level of interaction that not only meets but exceeds user expectations, paving the way for deeper engagement and reliance on AI technologies.
+Navigating through AI-generated results doesn't have to be daunting. These presentation patterns ensure that users not only understand the data but also find the interaction enjoyable and insightful, bridging the gap between complex AI processes and user-friendly experiences.

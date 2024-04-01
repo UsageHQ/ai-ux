@@ -1,75 +1,63 @@
 import { Cards, Card } from 'nextra/components';
-import {
-  ArrowPath,
-  ArrowPointingOut,
-  Clock,
-  CursorArrowRipple,
-  QuestionMark,
-  LightBulb,
-} from '@components/icons';
+import { Loader, Timer, Interaction, Globe } from '@components/icons';
+import { IntroCard } from '@components/intro-card';
+import Indeterminate from '@assets/canva-progress.webp';
+import Determinate from '@assets/midjourney-progress.webp';
+import Interactive from '@assets/chatgpt-interactiveprogress.webp';
+import Enrichment from '@assets/chatgpt-enrichcontext.webp';
+
 import { Promotion } from '@components/promotion';
 
-# Overview of Intermediary Processing in AI Product Interaction
+# Intermediary Processing in AI-Driven UX
 
-Intermediary processing represents a pivotal phase in AI product interaction, where user inputs undergo analysis and transformation into meaningful outputs. This stage is crucial for maintaining user engagement and trust, particularly as AI processes data, which can vary significantly in complexity and duration. Effective intermediary processing strategies ensure that users remain informed and reassured about the AI's progress, contributing to a transparent and satisfying user experience. Let's delve into the key components and their significance in AI interactions.
+###### Enhancing user experience during AI's processing time through engaging and informative feedback.
 
-## The Essence of Intermediary Processing
+Intermediary processing is a critical phase where AI analyzes user input and prepares responses. Managing user expectations during this period is essential for maintaining engagement and satisfaction. This category includes patterns designed to provide feedback that keeps users informed and involved:
 
-During this phase, the AI system might be fetching additional data, analyzing inputs, or generating complex responses. The duration of these processes can vary, from mere seconds to potentially longer periods, depending on the task complexity and the AI's computational requirements. It's a moment where the user's patience and interest can wane if not managed correctly.
+<div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-6 py-8'>
+  {[
+    {
+      title: 'Display Waiting Indicator in Indeterminate Progress',
+      description:
+        'Utilizes visual cues to indicate that the AI is processing, without specifying completion time, maintaining user engagement during uncertain wait times.',
+      image: Indeterminate,
+      href: '/intermediary-processing/indeterminate-progress',
+    },
+    {
+      title: 'Show Detailed Information in Determinate Progress',
+      description:
+        'Provides users with detailed progress updates, offering a clearer expectation of wait times and enhancing transparency.',
+      image: Determinate,
+      href: '/intermediary-processing/determinate-progress',
+    },
+    {
+      title: 'Interactive Indicators',
+      description:
+        'Incorporates interactive elements within progress indicators, allowing users to engage with the application even as they wait.',
+      image: Interactive,
+      href: '/intermediary-processing/interactive-indicators',
+    },
+    {
+      title: 'Enrich Context by Connecting to External Source',
+      description:
+        'Expands the AI’s understanding by integrating information from external sources, enriching the processing phase and improving outcome relevance.',
+      image: Enrichment,
+      href: '/intermediary-processing/context-enrichment',
+    },
+  ].map((pattern, index) => (
+    <IntroCard
+      key={index}
+      title={pattern.title}
+      description={pattern.description}
+      image={pattern.image}
+      href={pattern.href}
+    />
+  ))}
+</div>
 
-## Key Components of Intermediary Processing
-
-<Cards num={2}>
-  <Card
-    href='/intermediary-processing/indeterminate-progress'
-    title='Indeterminate Progress'
-    icon={<QuestionMark />}
-  />
-  <Card
-    href='/intermediary-processing/determinate-progress'
-    title='Determinate Progress'
-    icon={<Clock />}
-  />
-  <Card
-    href='/intermediary-processing/interactive-indicators'
-    title='Interactive Indicators'
-    icon={<CursorArrowRipple />}
-  />
-  <Card
-    href='/intermediary-processing/context-enrichment'
-    title='Context Enrichment'
-    icon={<ArrowPointingOut />}
-  />
-  <Card
-    href='/intermediary-processing/contextual-messages'
-    title='Contextual Messages'
-    icon={<LightBulb />}
-  />
-</Cards>
 <Promotion>
-  <strong>Want to explore more about building AI product?</strong>
-  Click here to contact us for a free consultation.
+  <strong>Looking to enhance AI processing feedback?</strong>
+  Dive into our collection to explore effective intermediary processing techniques.
 </Promotion>
-### Indeterminate Progress
 
-Some AI operations, especially those involving deep learning or extensive data analysis, can have unpredictable completion times. Communicating these indeterminate processes effectively is vital to keeping users engaged without providing specific time frames.
-
-### Determinate Progress
-
-For operations with known durations, providing users with clear, determinate progress indicators helps set expectations and reduce anxiety about wait times. This approach leverages progress bars, countdowns, or similar indicators to offer tangible feedback on the AI's processing status.
-
-### Interactive Indicators
-
-Beyond static progress bars, interactive indicators invite user interaction or provide educational content during the wait. These elements can transform passive waiting into an opportunity for engagement or learning, enriching the user experience even in intermediary phases.
-
-### Context Enrichment
-
-AI systems often need to pull in external data or perform additional computations to refine user inputs. This step, while crucial for accuracy and personalization, can extend processing times. Incorporating context enrichment effectively means keeping users informed about these value-adding activities.
-
-### Contextual Messages
-
-Providing contextual messages during processing can reassure users and enhance their understanding of the AI's operations. These messages can offer insights into what the AI is currently doing, why it's necessary, and how it benefits the final outcome.
-
-## Conclusion
-
-Intermediary processing is more than a bridge between input and output; it's an opportunity to solidify user trust, maintain engagement, and ensure transparency. By adopting thoughtful design strategies across the components of intermediary processing, AI products can offer users a more cohesive and enjoyable experience, even during the most complex operations. As we move forward, the refinement of these intermediary processes will continue to play a crucial role in the evolution of AI product design, shaping the way users interact with and perceive AI technologies.
+Maintaining user engagement during AI processing is pivotal. These intermediary processing patterns ensure that users remain informed, engaged, and satisfied, ultimately enhancing the user experience and trust in AI-driven applications.

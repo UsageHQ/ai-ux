@@ -1,0 +1,56 @@
+import { Cards, Card } from 'nextra/components';
+import { FlowChart, Branch, Merge } from '@components/icons';
+import { IntroCard } from '@components/intro-card';
+import NewBranch from '@assets/v0-newtree.webp';
+import SingleBranch from '@assets/midjourney-redo.webp';
+import MultiBranch from '@assets/chatgpt-multibranch.webp';
+
+import { Promotion } from '@components/promotion';
+
+# Version Control in AI-Driven UX
+
+###### Navigating through iterations and alternatives in AI-generated content with clarity and precision.
+
+Effective version control is key to managing the iterative process of refining AI-generated results. This category explores patterns that provide clear pathways for users to explore, compare, and select the most satisfactory outcomes, ensuring a streamlined experience:
+
+<div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-6 py-8'>
+  {[
+    {
+      title: 'Create New Branches',
+      description:
+        'Enables users to branch out from any point in their project, allowing for exploration of different directions without losing the original context.',
+      image: NewBranch,
+      href: '/version-control/new-tree',
+    },
+    {
+      title: 'Refine Results by Creating New Prompt in Current Branch',
+      description:
+        'Facilitates the addition of new inputs or edits in the current branch, seamlessly integrating refinements without disrupting the overall flow.',
+      image: SingleBranch,
+      href: '/version-control/single-branch-tree',
+    },
+    {
+      title: 'Creating New Branch in Same Tree When Refining Results',
+      description:
+        'Allows users to initiate a new, divergent path within the same project tree, providing the flexibility to explore alternatives while maintaining a unified structure.',
+      image: MultiBranch,
+      href: '/version-control/multi-branch-tree',
+    },
+  ].map((pattern, index) => (
+    <IntroCard
+      key={index}
+      title={pattern.title}
+      description={pattern.description}
+      image={pattern.image}
+      href={pattern.href}
+    />
+  ))}
+</div>
+
+<Promotion>
+  <strong>Mastering Version Control in AI UX.</strong>
+  Discover strategies for efficient iteration and alternative exploration in our
+  dedicated section.
+</Promotion>
+
+Adopting robust version control mechanisms is crucial for developing AI-driven projects. These patterns empower users to navigate through various iterations and alternatives with ease, promoting creativity and ensuring the best possible outcomes are achieved.
