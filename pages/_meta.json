@@ -13,24 +13,20 @@
   },
   "-- design-your-ai-product": {
     "type": "separator",
-    "title": "UX patterns for AI"
+    "title": "Main generative loop"
   },
   "getting-context": "Getting Context",
   "intermediary-processing": "Intermediary Processing Patterns",
   "presentation-of-results": "Results Presentation Patterns",
-  "-- version-control": {
+  "-- supportive-flow": {
     "type": "separator",
-    "title": "Version control"
+    "title": "Supportive flow"
   },
-  "new-tree": "Create new branches",
-  "single-branch-tree": "Refine results by creating new prompt in current branch",
-  "multi-branch-tree": "Creating new branch in same tree when refining results",
-  "-- usage-control": {
-    "type": "separator",
+  "version-control": "Version Control",
+  "usage-control": {
     "title": "Usage control (coming soon)"
   },
-  "-- monetization": {
-    "type": "separator",
+  "monetization": {
     "title": "Monetization (coming soon)"
   },
   "-- more": {
