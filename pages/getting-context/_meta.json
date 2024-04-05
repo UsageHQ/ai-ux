@@ -1,37 +1,7 @@
 {
   "input-from-scratch": "Inputting prompt from scratch",
   "multimedia-context": "Capturing multimedia context",
-  "select-existing-content": "Selecting from existing free-form content",
+  "select-existing-content": "Selecting existing free-form content",
   "select-from-recommendations": "Selecting from structured content",
-  "structured-input": "Inputting in form-based format",
-  "text-message": {
-    "display": "hidden"
-  },
-  "contextual-patterns": {
-    "display": "hidden"
-  },
-  "menu-driven-patterns": {
-    "display": "hidden"
-  },
-  "form-based-patterns": {
-    "display": "hidden"
-  },
-  "guided-input-patterns": {
-    "display": "hidden"
-  },
-  "sequential-data-input-patterns": {
-    "display": "hidden"
-  },
-  "predictive-and-autocomplete-patterns": {
-    "display": "hidden"
-  },
-  "images-inputs": {
-    "display": "hidden"
-  },
-  "voice-input": {
-    "display": "hidden"
-  },
-  "realworld-context": {
-    "display": "hidden"
-  }
+  "structured-input": "Inputting in structured format"
 }

@@ -1,12 +1,12 @@
 {
   "streaming-results": "Streaming results",
-  "progressive-render": "Progressive render of results",
-  "gen-structured-data": "Present structured data",
-  "gen-multiple-results": "Present multiple results",
-  "predictive-and-autocomplete-patterns": "Predictive and autocomplete patterns",
+  "progressive-render": "Rendering results progressively",
+  "gen-structured-data": "Generating structured data",
+  "gen-multiple-results": "Presenting multiple results",
+  "predictive-and-autocomplete-patterns": "Utilizing predictive and autocomplete patterns",
   "interactive-ui": {
-    "title": "Present results with interactive elements",
+    "title": "Presenting Results with Interactive Elements",
     "display": "hidden"
   },
-  "user-feedback": "Collect users feedbacks on the results"
+  "user-feedback": "Collecting user feedback on the results"
 }

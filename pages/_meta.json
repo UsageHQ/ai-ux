@@ -34,7 +34,10 @@
     "title": "More"
   },
   "about-usageso": "About Usage.so",
-  "how-to-contribute": "How to contribute?",
-  "thank-you-our-contributors": "Thank you our contributors",
+  "how-to-contribute": { "title": "How to contribute?", "display": "hidden" },
+  "thank-you-our-contributors": {
+    "title": "Thank you our contributors",
+    "display": "hidden"
+  },
   "how-to-reach-us": "How to reach us?"
 }

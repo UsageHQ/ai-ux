@@ -1,9 +1,6 @@
 {
-  "indeterminate-progress": "Display waiting indicator in indeterminate Progress",
-  "determinate-progress": "Show detailed information determinate Progress",
-  "interactive-indicators": "Interactive Indicators",
-  "context-enrichment": "Enrich context by connecting to external source",
-  "contextual-messages": {
-    "display": "hidden"
-  }
+  "indeterminate-progress": "Displaying indeterminate progress indicator",
+  "determinate-progress": "Showing detailed determinate progress",
+  "interactive-indicators": "Using interactive indicators",
+  "context-enrichment": "Enriching context by connecting to external sources"
 }

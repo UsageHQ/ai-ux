@@ -2,10 +2,10 @@ import { StructureChart } from '@components/structure-chart';
 import { RefLink } from '@components/reference';
 import Link from 'next/link';
 import Image from 'next/image';
-import ContextBuilding from '@assets/chatgpt-chat.webp';
-import IntermediaryProcessing from '@assets/photoshop-menubased.webp';
-import DeliveringResults from '@assets/synthesia-progress.webp';
-import RefiningResults from '@assets/vscode-contextual.webp';
+import ContextBuilding from '@assets/bingchat-chat.webp';
+import IntermediaryProcessing from '@assets/canva-progress.webp';
+import DeliveringResults from '@assets/v0-structured.webp';
+import RefiningResults from '@assets/chatgpt-multibranch.webp';
 import { IntroCard } from '@components/intro-card';
 
 # AI Product UX Patterns Collection
@@ -17,28 +17,28 @@ The AI Product UX Patterns Collection is a curated set of UX patterns for builde
 <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6 py-8">
 {[
   {
-    title: 'Context Building',
+    title: 'Getting Context',
     description: 'Set the stage for understanding user needs and intent.',
     image: ContextBuilding,
-    link: '/patterns/context-building',
+    link: '/getting-context',
   },
   {
     title: 'Intermediary Processing',
     description: 'Keep users engaged as the AI analyzes and processes data.',
     image: IntermediaryProcessing,
-    link: '/patterns/intermediary-processing',
+    link: '/intermediary-processing',
   },
   {
-    title: 'Delivering Results',
+    title: 'Presenting Results',
     description: 'Focus on how best to present AI-generated insights.',
     image: DeliveringResults,
-    link: '/patterns/delivering-results',
+    link: '/presentation-of-results',
   },
   {
-    title: 'Refining Results',
+    title: 'Version Control',
     description: 'Offer users the opportunity to tweak and perfect these outcomes.',
     image: RefiningResults,
-    link: '/patterns/refining-results',
+    link: '/version-control',
   },
 ].map((pattern, index) => (
   <IntroCard
@@ -56,12 +56,24 @@ The AI Product UX Patterns Collection is a curated set of UX patterns for builde
 
 <StructureChart />
 
-The structure of this patterns collection mirrors the natural progression of AI interactions, distilled into four essential steps: Context Building, Intermediary Processing, Delivering Results, and Refining Results. This framework reflects the comprehensive journey of user interaction with AI, from initial engagement through to the presentation of personalized outcomes. Each step is pivotal, underlined by the foundational elements of Usage Control and Monetization, ensuring that the products are not only user-centric but also viable and sustainable.
+### The main loop of AI interaction
 
-- **Context Building** sets the stage for understanding user needs and intent.
+The structure of this patterns collection mirrors the natural progression of AI interactions, distilled into four essential steps: Getting Context, Intermediary Processing, and Presenting Results. This framework reflects the comprehensive journey of user interaction with AI, from initial engagement through to the presentation of personalized outcomes. Each step is pivotal, underlined by the foundational elements of Usage Control and Monetization, ensuring that the products are not only user-centric but also viable and sustainable.
+
+- **Getting context** sets the stage for understanding user needs and intent.
 - **Intermediary Processing** keeps users engaged as the AI analyzes and processes data.
-- **Delivering Results** focuses on how best to present AI-generated insights.
-- **Refining Results** offers users the opportunity to tweak and perfect these outcomes.
+- **Presentating of Results** focuses on how best to present AI-generated insights.
+
+### Supportive Blocks for scaling and growing AI products
+
+Beyond the primary AI interaction sequence, we identify key Supportive Blocks that are vital in scaling and enhancing AI-powered products:
+
+- **Version Control:** This block empowers users to manage their interaction history with AI, such as conversations, prompts, or generative tasks. It offers the ability to review and revert to previous states of the dialogue or design, allowing users to navigate through their generative flow and select preferred outcomes from past iterations.
+- **Monetization:** A critical aspect for transforming AI technology into a viable business model. This block facilitates the integration of monetization strategies, aligning product capabilities with revenue generation.
+- **Usage Control:** An important tool for overseeing the deployment of your AI solutions. Usage control ensures proper usage, manages load, and maintains an optimal experience across user interactions.
+
+These Supportive Blocks are the bedrock for product development, ensuring that your AI offerings are not only advanced and user-centric but also commercially sustainable and adaptable to the evolving market needs.
+This content segment adds a section about Supportive Blocks that help in the development and management of AI products, aimed at builders and developers in the AI space.
 
 ## References
 
