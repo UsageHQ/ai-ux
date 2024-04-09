@@ -1,50 +1,47 @@
-import { Cards, Card } from 'nextra/components';
-import { FlowChart, Branch, Merge } from '@components/icons';
-import { IntroCard } from '@components/intro-card';
-import NewBranch from '@assets/v0-newtree.webp';
-import SingleBranch from '@assets/midjourney-redo.webp';
-import MultiBranch from '@assets/chatgpt-multibranch.webp';
-
+import { SampleUI } from '@components/sample-ui';
+import ChatGPT from '@assets/chatgpt-multibranch.webp';
+import v0 from '@assets/v0-newtree.webp';
 import { Promotion } from '@components/promotion';
+import Midjourney from '@assets/midjourney-redo.webp';
 
-# Version Control in AI-Driven UX
+# Version Control
 
-###### Navigating through iterations and alternatives in AI-generated content with clarity and precision.
+**A guide to managing the lifecycle of AI-generated content through systematic iterations.**
 
-Effective version control is key to managing the iterative process of refining AI-generated results. This category explores patterns that provide clear pathways for users to explore, compare, and select the most satisfactory outcomes, ensuring a streamlined experience:
+Version control, in the context of AI-driven user experiences, is the systematic management of changes to AI-generated content. It allows for tracking revisions, exploring alternative outcomes, and refining results based on user feedback or new inputs.
 
-<div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-6 py-8'>
-  {[
-    {
-      title: 'Create New Branches',
-      description:
-        'Enables users to branch out from any point in their project, allowing for exploration of different directions without losing the original context.',
-      image: NewBranch,
-      href: '/version-control/new-tree',
-    },
-    {
-      title: 'Refine Results by Creating New Prompt in Current Branch',
-      description:
-        'Facilitates the addition of new inputs or edits in the current branch, seamlessly integrating refinements without disrupting the overall flow.',
-      image: SingleBranch,
-      href: '/version-control/single-branch-tree',
-    },
-    {
-      title: 'Creating New Branch in Same Tree When Refining Results',
-      description:
-        'Allows users to initiate a new, divergent path within the same project tree, providing the flexibility to explore alternatives while maintaining a unified structure.',
-      image: MultiBranch,
-      href: '/version-control/multi-branch-tree',
-    },
-  ].map((pattern, index) => (
-    <IntroCard
-      key={index}
-      title={pattern.title}
-      description={pattern.description}
-      image={pattern.image}
-      href={pattern.href}
-    />
-  ))}
+## Why Version Control Is Essential
+
+Version control is crucial because it brings order and clarity to the often chaotic process of content evolution. It ensures that every change or alternative path taken is recorded and accessible, allowing for:
+
+- **Easy Navigation**: Users can traverse through various iterations and branches to understand the development process or revisit decisions.
+- **Informed Decision-Making**: By comparing different versions or branches, users can make choices based on a comprehensive overview of alternatives.
+- **Collaborative Efficiency**: Teams can work concurrently on different aspects of a project without the risk of overwriting each other's contributions.
+- **Creative Freedom**: Providing a safety net that records every change, version control encourages experimentation by removing the fear of losing previous work.
+
+Explore how these principles are applied in practical scenarios:
+
+<br />
+
+<div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8'>
+  <SampleUI
+    src={ChatGPT}
+    appName='ChatGPT'
+    desc='When users editing a message in ChatGPT, they can create new branches to explore different conversational directions without losing the original context. This feature allows users to experiment with various responses and compare them side by side, enhancing the creative process and decision-making in AI-driven conversations.'
+    productUrl='https://www.v0.dev/'
+  />
+  <SampleUI
+    src={v0}
+    appName='v0 from Vercel'
+    desc='v0 provides a folk action to let users take the current work and create a new generative tree. The new tree will start from the version users selected. This helps users explore different directions without losing their original work.'
+    productUrl='https://www.v0.dev/'
+  />
+  <SampleUI
+    src={Midjourney}
+    appName='Midjourney'
+    desc='Midjourney provide a redo button to let users regenerate photos, button is attached right under the results. The prompt will be reused to generate new results.'
+    productUrl='https://midjourney.com/'
+  />
 </div>
 
 <Promotion>

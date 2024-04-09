@@ -1,5 +1,14 @@
 {
-  "new-tree": "Creating new branches",
-  "single-branch-tree": "Refining results by creating new prompt in current branch",
-  "multi-branch-tree": "Creating new branch in same tree when refining results"
+  "new-tree": {
+    "title": "Creating new branches",
+    "display": "hidden"
+  },
+  "single-branch-tree": {
+    "title": "Refining results by creating new prompt in current branch",
+    "display": "hidden"
+  },
+  "multi-branch-tree": {
+    "title": "Creating new branch in same tree when refining results",
+    "display": "hidden"
+  }
 }

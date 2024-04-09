@@ -1,7 +1,6 @@
 import Layout from './components/layout';
 import { useConfig } from 'nextra-theme-docs';
 import { useRouter } from 'next/router';
-
 const logo = (
   <>
     <svg
