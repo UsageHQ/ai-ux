@@ -60,7 +60,7 @@ export default {
     text: (
       <span>
         MIT {new Date().getFullYear()} ©{' '}
-        <a href='https://rezza.io' target='_blank'>
+        <a href='https://rezza.io?utm_source=aiux' target='_blank'>
           Rezza Inc.
         </a>
         .
